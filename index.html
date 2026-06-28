@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Anam AI Studio — Free AI Tools, Tips & Tricks, Professional CV Design, LinkedIn Optimization for Students, Freelancers & Businesses in Pakistan."/>
+<meta name="keywords" content="AI Tools Pakistan, CV Design, LinkedIn Optimization, ChatGPT Tips, Free AI Resources, Anam AI Studio"/>
+<meta name="author" content="Anam AI Studio"/>
+<meta property="og:title" content="Anam AI Studio — AI Tools, Tips & CV Design"/>
+<meta property="og:description" content="Learn AI, access free tools, get your CV designed professionally."/>
+<meta property="og:type" content="website"/>
+<title>Anam AI Studio — AI Tools, Tips & CV Design</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <span class="loader-brand">ANAM AI STUDIO</span>
+</div>
+
+<!-- ═══════════════════════════════════
+     NAVBAR
+═══════════════════════════════════ -->
+<nav id="nav">
+  <div class="container nav-wrap">
+
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">✨</div>
+      <span class="logo-text">Anam <span>AI Studio</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#tools">AI Tools</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#tips">Tips & Tricks</a></li>
+      <li><a href="#cv">CV Design</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="search-box" id="search-box">
+        <i class="fas fa-search s-icon"></i>
+        <input type="text" id="s-input" placeholder="Search tips, tools…"/>
+      </div>
+      <button class="s-btn" id="s-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
+      <a href="#cv" class="btn btn-primary" style="padding:10px 20px;font-size:13px">Hire Me</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Drawer overlay -->
+<div id="drawer-overlay"></div>
+
+<!-- Mobile drawer -->
+<div id="mobile-drawer">
+  <button class="drawer-close" id="drawer-close">✕</button>
+  <a href="#tools"><i class="fas fa-robot"></i> AI Tools</a>
+  <a href="#resources"><i class="fas fa-book-open"></i> Free Resources</a>
+  <a href="#tips"><i class="fas fa-lightbulb"></i> Tips & Tricks</a>
+  <a href="#cv"><i class="fas fa-file-alt"></i> CV Design</a>
+  <a href="#blog"><i class="fas fa-pen-nib"></i> Blog</a>
+  <a href="#testimonials"><i class="fas fa-star"></i> Reviews</a>
+  <a href="#about"><i class="fas fa-user"></i> About</a>
+  <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+  <div style="margin-top:16px">
+    <a href="#cv" class="btn btn-primary" style="justify-content:center">Hire Me <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     HERO
+═══════════════════════════════════ -->
+<section id="hero">
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
+
+  <div class="container hero-inner">
+    <!-- Left content -->
+    <div class="reveal">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Pakistan's #1 AI Learning Studio
+      </div>
+
+      <h1 class="hero-title">
+        Master AI.<br>
+        <span class="grad">Grow Faster.</span><br>
+        Stand Out.
+      </h1>
+
+      <p class="hero-desc">
+        Free AI tools, tips & tricks, professional CV design, and LinkedIn optimization — all in one place. Built for students, freelancers & creators in Pakistan.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#tools" class="btn btn-primary"><i class="fas fa-robot"></i> Explore AI Tools</a>
+        <a href="#cv" class="btn btn-ghost"><i class="fas fa-file-alt"></i> Get My CV Done</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="num"><span data-count="5000">0</span>+</span>
+          <div class="lbl">Students Helped</div>
+        </div>
+        <div class="stat">
+          <span class="num"><span data-count="100">0</span>+</span>
+          <div class="lbl">Free Resources</div>
+        </div>
+        <div class="stat">
+          <span class="num"><span data-count="200">0</span>+</span>
+          <div class="lbl">CVs Designed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right visual -->
+    <div class="hero-visual reveal d2">
+      <div class="mockup">
+        <div class="mockup-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="m-bar w80"></div>
+        <div class="m-bar w60"></div>
+        <div class="m-bar w90"></div>
+        <div class="m-chip">
+          <div class="m-chip-ico">🤖</div>
+          <div class="m-chip-lines">
+            <div class="line"></div>
+            <div class="line s"></div>
+          </div>
+        </div>
+        <div class="m-bar w40" style="margin-top:12px"></div>
+      </div>
+      <div class="fc fc1">🚀 AI Tips Daily</div>
+      <div class="fc fc2">✨ CV in 24h</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FEATURED AI TOOLS
+═══════════════════════════════════ -->
+<section class="section" id="tools">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">AI Tools</span>
+      <h2 class="h2">Best Free <span class="grad">AI Tools</span> for You</h2>
+      <p class="subtext">Handpicked tools that actually work — for assignments, content, career & productivity.</p>
+    </div>
+
+    <div class="tools-grid">
+      <div class="card tool-card reveal d1">
+        <div class="tool-ico">🎙️</div>
+        <span class="pill">Voice AI</span>
+        <h3 class="tool-name">ElevenLabs</h3>
+        <p class="tool-desc">Clone your voice or generate studio-quality voiceovers in seconds. Perfect for reels, podcasts & AI content creation.</p>
+        <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card tool-card reveal d2">
+        <div class="tool-ico">✍️</div>
+        <span class="pill">Writing AI</span>
+        <h3 class="tool-name">ChatGPT</h3>
+        <p class="tool-desc">Write assignments, emails, captions, cover letters & more. The most powerful AI writing assistant — free to use.</p>
+        <a href="https://chat.openai.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card tool-card reveal d3">
+        <div class="tool-ico">🎨</div>
+        <span class="pill">Design AI</span>
+        <h3 class="tool-name">Canva AI</h3>
+        <p class="tool-desc">Design stunning thumbnails, posters, presentations & CVs using powerful AI-driven design tools. No designer needed.</p>
+        <a href="https://canva.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card tool-card reveal d1">
+        <div class="tool-ico">🎬</div>
+        <span class="pill">Video AI</span>
+        <h3 class="tool-name">CapCut AI</h3>
+        <p class="tool-desc">Auto-captions, AI effects, and one-click video editing. No watermark. Best for Instagram Reels & TikTok content.</p>
+        <a href="https://capcut.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card tool-card reveal d2">
+        <div class="tool-ico">📊</div>
+        <span class="pill">Productivity AI</span>
+        <h3 class="tool-name">Notion AI</h3>
+        <p class="tool-desc">Organize your study notes, projects & tasks with AI summaries, auto-formatting and smart databases.</p>
+        <a href="https://notion.so" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card tool-card reveal d3">
+        <div class="tool-ico">🔍</div>
+        <span class="pill">Research AI</span>
+        <h3 class="tool-name">Perplexity AI</h3>
+        <p class="tool-desc">Get instant, cited answers for research papers, assignments & fact-checking. Smarter than traditional search.</p>
+        <a href="https://perplexity.ai" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FREE RESOURCES / CATEGORIES
+═══════════════════════════════════ -->
+<section class="section" id="resources">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Free Resources</span>
+      <h2 class="h2">Explore <span class="grad">All Categories</span></h2>
+      <p class="subtext" style="margin:0 auto">Find exactly what you need — from AI tools to career resources. All free.</p>
+    </div>
+
+    <div class="cats">
+      <div class="card cat reveal"><span class="cat-emoji">🤖</span><div class="cat-name">AI Tools</div><div class="cat-count">24 Tools</div></div>
+      <div class="card cat reveal d1"><span class="cat-emoji">💡</span><div class="cat-name">AI Tips</div><div class="cat-count">50+ Tips</div></div>
+      <div class="card cat reveal d2"><span class="cat-emoji">📄</span><div class="cat-name">CV Templates</div><div class="cat-count">10 Templates</div></div>
+      <div class="card cat reveal d3"><span class="cat-emoji">💼</span><div class="cat-name">LinkedIn Guides</div><div class="cat-count">10 Guides</div></div>
+      <div class="card cat reveal"><span class="cat-emoji">🎓</span><div class="cat-name">For Students</div><div class="cat-count">30+ Resources</div></div>
+      <div class="card cat reveal d1"><span class="cat-emoji">🖥️</span><div class="cat-name">Freelancing</div><div class="cat-count">20+ Guides</div></div>
+      <div class="card cat reveal d2"><span class="cat-emoji">📱</span><div class="cat-name">Content Creation</div><div class="cat-count">15 Tutorials</div></div>
+      <div class="card cat reveal d3"><span class="cat-emoji">⚡</span><div class="cat-name">Productivity</div><div class="cat-count">18 Hacks</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     AI TIPS & TRICKS
+═══════════════════════════════════ -->
+<section class="section" id="tips">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Tips & Tricks</span>
+      <h2 class="h2">Top <span class="grad">AI Tips</span> This Week</h2>
+      <p class="subtext">Practical, copy-paste ready tips to save you hours every week.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;margin-top:48px">
+      <div class="card reveal d1" style="padding:28px">
+        <div style="font-size:28px;margin-bottom:14px">💬</div>
+        <span class="pill">ChatGPT</span>
+        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">10 Prompts Every Student Needs</h3>
+        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Use these prompts for assignments, quizzes, presentations & research. Save hours daily with the right ChatGPT commands.</p>
+        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card reveal d2" style="padding:28px">
+        <div style="font-size:28px;margin-bottom:14px">🎙️</div>
+        <span class="pill">ElevenLabs</span>
+        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">Clone Your Voice in 60 Seconds</h3>
+        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Step-by-step guide to clone your voice using ElevenLabs free plan. Perfect for reels, voiceovers & AI content.</p>
+        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="card reveal d3" style="padding:28px">
+        <div style="font-size:28px;margin-bottom:14px">🖼️</div>
+        <span class="pill">Canva + AI</span>
+        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">Create Viral Thumbnails with AI</h3>
+        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Use Canva's AI tools to design click-worthy thumbnails in 5 minutes. No design experience needed at all.</p>
+        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     WHY CHOOSE US
+═══════════════════════════════════ -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">Why Us</span>
+          <h2 class="h2">Why Choose <span class="grad">Anam AI Studio?</span></h2>
+          <p class="subtext">Real, practical, tested knowledge — not just theory. Made by a student, for students.</p>
+        </div>
+        <div class="features">
+          <div class="feat reveal d1">
+            <div class="feat-ico">🎯</div>
+            <div>
+              <div class="feat-title">100% Practical Content</div>
+              <p class="feat-desc">Every tip and tool is personally tested. No fluff — only what actually works for students and freelancers.</p>
+            </div>
+          </div>
+          <div class="feat reveal d2">
+            <div class="feat-ico">🆓</div>
+            <div>
+              <div class="feat-title">Free for Students</div>
+              <p class="feat-desc">Most resources are completely free. Because quality knowledge should be accessible to every student in Pakistan.</p>
+            </div>
+          </div>
+          <div class="feat reveal d3">
+            <div class="feat-ico">🇵🇰</div>
+            <div>
+              <div class="feat-title">Pakistan-Focused</div>
+              <p class="feat-desc">Content designed for Pakistani students & freelancers — local context, global knowledge.</p>
+            </div>
+          </div>
+          <div class="feat reveal d1">
+            <div class="feat-ico">⚡</div>
+            <div>
+              <div class="feat-title">Always Up to Date</div>
+              <p class="feat-desc">AI changes fast. Fresh tips, new tools and latest tricks updated every single week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-visual reveal d2">
+        <div class="why-art">🤖</div>
+        <div class="stat-badge tr">
+          <div class="badge-n"><span data-count="5000">0</span>+</div>
+          <div class="badge-l">Students Helped</div>
+        </div>
+        <div class="stat-badge bl">
+          <div class="badge-n"><span data-count="200">0</span>+</div>
+          <div class="badge-l">CVs Designed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     BLOG
+═══════════════════════════════════ -->
+<section class="section" id="blog">
+  <div class="container">
+    <div class="blog-hd reveal">
+      <div>
+        <span class="eyebrow">Blog</span>
+        <h2 class="h2">Latest <span class="grad">AI Tips & Blog</span></h2>
+      </div>
+      <a href="#blog" class="btn btn-ghost">View All <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="blog-grid">
+      <article class="card blog-card reveal d1">
+        <div class="blog-img" style="background:linear-gradient(135deg,#7C3AED,#3B82F6)">
+          <span style="position:relative;z-index:1">🎙️</span>
+          <div class="blog-img-tint"></div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="pill">ElevenLabs</span>
+            <span class="blog-date">June 2025</span>
+          </div>
+          <h3 class="blog-title">ElevenLabs Voice Cloning: Complete Beginner's Guide</h3>
+          <p class="blog-excerpt">Clone your voice in 60 seconds using ElevenLabs free plan. Perfect for reels, podcasts & AI content creation.</p>
+          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="card blog-card reveal d2">
+        <div class="blog-img" style="background:linear-gradient(135deg,#1D4ED8,#7C3AED)">
+          <span style="position:relative;z-index:1">✍️</span>
+          <div class="blog-img-tint"></div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="pill">ChatGPT</span>
+            <span class="blog-date">May 2025</span>
+          </div>
+          <h3 class="blog-title">10 ChatGPT Prompts Every Student Must Know in 2025</h3>
+          <p class="blog-excerpt">Copy-paste prompts for assignments, quizzes, presentations & research. Save hours every week!</p>
+          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="card blog-card reveal d3">
+        <div class="blog-img" style="background:linear-gradient(135deg,#6D28D9,#2563EB)">
+          <span style="position:relative;z-index:1">💼</span>
+          <div class="blog-img-tint"></div>
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="pill">LinkedIn</span>
+            <span class="blog-date">April 2025</span>
+          </div>
+          <h3 class="blog-title">LinkedIn Profile Optimization: Get Noticed by Recruiters</h3>
+          <p class="blog-excerpt">Step-by-step guide to optimize your LinkedIn with AI tools. More views, connections & job offers.</p>
+          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CV DESIGN SERVICES
+═══════════════════════════════════ -->
+<section class="section" id="cv">
+  <div class="container">
+    <div class="cv-grid">
+      <!-- Left: Plans -->
+      <div>
+        <div class="reveal">
+          <span class="eyebrow">Services</span>
+          <h2 class="h2">Professional <span class="grad">CV Design</span></h2>
+          <p class="subtext">ATS-friendly, recruiter-approved CVs. Stand out from hundreds of applicants.</p>
+        </div>
+
+        <div class="plans">
+          <div class="plan reveal d1">
+            <div class="plan-hd">
+              <div class="plan-name">Basic CV</div>
+              <div class="plan-price">PKR 500</div>
+            </div>
+            <div class="plan-feats">
+              <div class="plan-feat">Single-page professional CV</div>
+              <div class="plan-feat">ATS-friendly format</div>
+              <div class="plan-feat">1 revision included</div>
+              <div class="plan-feat">Delivered in 24 hours</div>
+            </div>
+          </div>
+
+          <div class="plan pop reveal d2">
+            <div class="pop-tag">⭐ MOST POPULAR</div>
+            <div class="plan-hd">
+              <div class="plan-name">Premium CV</div>
+              <div class="plan-price">PKR 1200</div>
+            </div>
+            <div class="plan-feats">
+              <div class="plan-feat">2-page premium CV design</div>
+              <div class="plan-feat">ATS + visually attractive</div>
+              <div class="plan-feat">LinkedIn headline & summary</div>
+              <div class="plan-feat">Cover letter included</div>
+              <div class="plan-feat">3 revisions + 12h delivery</div>
+            </div>
+          </div>
+
+          <div class="plan reveal d3">
+            <div class="plan-hd">
+              <div class="plan-name">LinkedIn Optimization</div>
+              <div class="plan-price">PKR 800</div>
+            </div>
+            <div class="plan-feats">
+              <div class="plan-feat">Full LinkedIn profile rewrite</div>
+              <div class="plan-feat">Keyword optimization</div>
+              <div class="plan-feat">Recruiter-friendly summary</div>
+              <div class="plan-feat">2 revisions included</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px" class="reveal">
+          <!-- PLACEHOLDER: Replace XXXXXXXXXXX with your WhatsApp number -->
+          <a href="https://wa.me/92XXXXXXXXXXX?text=Hi%20Anam!%20I%20want%20to%20order%20a%20CV%20design." target="_blank" class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: CV Preview -->
+      <div class="cv-preview-card reveal d2">
+        <!-- PLACEHOLDER logo area -->
+        <div class="cv-ph">[ YOUR LOGO HERE — Add logo.png to assets/ ]</div>
+
+        <div class="cv-hd-row">
+          <div class="cv-avatar">👩</div>
+          <div>
+            <div class="cv-info-name">Your Name Here</div>
+            <div class="cv-info-role">Data Science Student · AI Content Creator</div>
+          </div>
+        </div>
+
+        <div class="cv-sec">Skills</div>
+        <div class="skill-row"><div class="skill-lbl">Python</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div></div>
+        <div class="skill-row"><div class="skill-lbl">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="96%"></div></div></div>
+        <div class="skill-row"><div class="skill-lbl">Canva</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div></div>
+        <div class="skill-row"><div class="skill-lbl">MS Office</div><div class="skill-track"><div class="skill-fill" data-w="88%"></div></div></div>
+
+        <div class="cv-sec" style="margin-top:18px">Contact</div>
+        <div style="font-size:13px;color:var(--txt-secondary)">
+          📧 <a href="mailto:anamaitech5@gmail.com" style="color:var(--clr-purple-light)">anamaitech5@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     TESTIMONIALS
+═══════════════════════════════════ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div style="text-align:center" class="reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2 class="h2">What People <span class="grad">Say About Us</span></h2>
+      <p class="subtext" style="margin:0 auto">Real feedback from students, freelancers & clients across Pakistan.</p>
+    </div>
+
+    <div class="testi-wrap">
+      <div class="testi-track" id="testi-track">
+
+        <div class="card testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"Anam AI Studio ne meri CV bilkul transform kar di! Recruiters notice karne lage. 100% recommended for every student!"</p>
+          <div class="testi-author">
+            <div class="testi-av">F</div>
+            <div>
+              <div class="testi-name">Fatima Malik</div>
+              <div class="testi-role">BS Student, Lahore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"ChatGPT prompts wali tips ne mere assignments ke hours bachaye. Bohot practical content hai — genuinely helpful!"</p>
+          <div class="testi-author">
+            <div class="testi-av">A</div>
+            <div>
+              <div class="testi-name">Ahmed Raza</div>
+              <div class="testi-role">FSc Student, Karachi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"Got my LinkedIn optimized and within 2 weeks had 3 job interview calls! Amazing work. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-av">S</div>
+            <div>
+              <div class="testi-name">Sara Iqbal</div>
+              <div class="testi-role">Fresh Graduate, Islamabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"ElevenLabs tutorial bohat helpful thi! Apne YouTube ke liye voice use ki. Subscribers aur views dono barh gaye!"</p>
+          <div class="testi-author">
+            <div class="testi-av">U</div>
+            <div>
+              <div class="testi-name">Usman Tariq</div>
+              <div class="testi-role">Content Creator, Faisalabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"Premium CV design is worth every rupee! Design was so clean and professional. Got hired within a month!"</p>
+          <div class="testi-author">
+            <div class="testi-av">Z</div>
+            <div>
+              <div class="testi-name">Zainab Hussain</div>
+              <div class="testi-role">Freelancer, Multan</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="slider-ctrl">
+      <button class="s-arrow" id="t-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+      <button class="s-arrow" id="t-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FAQ
+═══════════════════════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div style="text-align:center" class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h2">Frequently Asked <span class="grad">Questions</span></h2>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q">CV design mein kitna time lagta hai? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Basic CV 24 hours mein deliver hota hai. Premium CV sirf 12 hours mein. Urgent order ke liye WhatsApp pe message karen.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Kya AI tools use karne ke liye technical knowledge chahiye? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Bilkul nahi! Sare tutorials beginner-friendly hain. Agar aap phone use kar sakte hain toh ye tools zaroor seekh sakte hain.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Kya resources free hain? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Haan! Zyada tar AI tips, tutorials aur resources bilkul free hain. Sirf CV design aur LinkedIn optimization services paid hain.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Payment kaise hoti hai? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>JazzCash, EasyPaisa, ya bank transfer — jo aapke liye convenient ho. Payment details WhatsApp par share ki jaati hain order confirm hone ke baad.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">CV ATS-friendly hoga? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Haan, bilkul! Har CV ATS (Applicant Tracking System) ke saath compatible hota hai taake online job applications mein filter na ho jaaye.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Kya revisions milte hain? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Basic plan mein 1 revision, Premium mein 3 revisions included hain. Changes WhatsApp par share karen — jaldi update kar diya jaata hai.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Kya main contact kar sakti/sakta hoon social media pe? <span class="faq-ico">+</span></button>
+        <div class="faq-body"><p>Haan! Instagram @anamaistudio, Facebook aur LinkedIn par available hoon. Social media icons neeche footer mein diye gaye hain.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     ABOUT FOUNDER
+═══════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Founder Card -->
+      <div class="founder-card reveal">
+        <div class="founder-img">
+          👩
+          <span class="ph-label">Add your photo</span>
+          <!--
+            PLACEHOLDER — To add your photo:
+            1. Save your photo as: assets/founder.jpg
+            2. Replace the emoji above with an <img> tag:
+               <img src="assets/founder.jpg" alt="Anam" style="width:100%;height:100%;border-radius:50%;object-fit:cover"/>
+          -->
+        </div>
+        <div class="founder-name">Anam Majid</div>
+        <div class="founder-title">Data Science Student · AI Content Creator · Freelancer</div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Story -->
+      <div class="reveal d2">
+        <span class="eyebrow">About Me</span>
+        <h2 class="h2">The Person Behind <span class="grad">Anam AI Studio</span></h2>
+        <p style="font-size:16px;color:var(--txt-secondary);line-height:1.85;margin-bottom:18px">
+          Assalam o Alaikum! Main Anam hoon — Pakistan se ek Data Science student jo AI ki duniya mein roz nayi cheezein seekh rahi hai aur sab ke saath share karti hai.
+        </p>
+        <p style="font-size:16px;color:var(--txt-secondary);line-height:1.85;margin-bottom:30px">
+          Anam AI Studio isliye banaya taake Pakistani students, freelancers aur creators ko AI tools aur practical knowledge asaan tarike se mil sake — bilkul free. Sath hi professional CV design aur LinkedIn optimization services bhi provide karta hoon.
+        </p>
+        <div class="founder-chips">
+          <div class="chip"><div class="cn">1st</div><div class="cl">Semester DS</div></div>
+          <div class="chip"><div class="cn">3</div><div class="cl">Platforms</div></div>
+          <div class="chip"><div class="cn">200+</div><div class="cl">CVs Done</div></div>
+          <div class="chip"><div class="cn">🇵🇰</div><div class="cl">Pakistan</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     NEWSLETTER
+═══════════════════════════════════ -->
+<section class="section" id="newsletter">
+  <div class="container">
+    <div class="nl-box reveal">
+      <span class="eyebrow" style="justify-content:center">Newsletter</span>
+      <h2 class="nl-title">Get Weekly <span class="grad">AI Tips</span></h2>
+      <p class="nl-sub">New AI tools, tricks & career tips — straight to your inbox. No spam, ever!</p>
+      <form class="nl-form" id="nl-form">
+        <input type="email" placeholder="Enter your email address…" required/>
+        <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CONTACT
+═══════════════════════════════════ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 class="h2">Let's <span class="grad">Connect</span></h2>
+      <p class="subtext">Have a question, want to order a CV, or just want to say hi? I'm just a message away!</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="c-items reveal d1">
+        <div class="c-item">
+          <div class="c-ico">📧</div>
+          <div>
+            <div class="c-lbl">Email</div>
+            <div class="c-val"><a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📱</div>
+          <div>
+            <div class="c-lbl">WhatsApp</div>
+            <!-- PLACEHOLDER: Replace with your number when ready -->
+            <div class="c-val" style="color:var(--txt-muted);font-style:italic">Coming Soon</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📍</div>
+          <div>
+            <div class="c-lbl">Location</div>
+            <div class="c-val">Pakistan 🇵🇰</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="c-lbl" style="margin-bottom:12px">Follow on Social Media</div>
+          <div class="social-row" style="justify-content:flex-start">
+            <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal d2">
+        <form class="c-form" id="contact-form">
+          <div class="f-row">
+            <div class="f-group">
+              <label class="f-label">Your Name</label>
+              <input type="text" class="f-input" placeholder="e.g. Sara Ahmed" required/>
+            </div>
+            <div class="f-group">
+              <label class="f-label">Email Address</label>
+              <input type="email" class="f-input" placeholder="you@email.com" required/>
+            </div>
+          </div>
+          <div class="f-group">
+            <label class="f-label">Subject</label>
+            <input type="text" class="f-input" placeholder="CV Order / AI Question / Feedback…" required/>
+          </div>
+          <div class="f-group">
+            <label class="f-label">Message</label>
+            <textarea class="f-input" placeholder="Tell me more…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn" style="justify-content:center">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div id="form-success">✅ Message sent! I'll reply within 24 hours. JazakAllah! 🌟</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+
+      <!-- Brand -->
+      <div>
+        <div class="ft-brand-name">Anam AI Studio</div>
+        <p class="ft-desc">Pakistan's AI learning studio — free AI tools, tips, and professional career services all in one place.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <div class="ft-col-title">Quick Links</div>
+        <ul class="ft-links">
+          <li><a href="#tools">AI Tools</a></li>
+          <li><a href="#resources">Free Resources</a></li>
+          <li><a href="#tips">AI Tips & Tricks</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <div class="ft-col-title">Services</div>
+        <ul class="ft-links">
+          <li><a href="#cv">CV Design</a></li>
+          <li><a href="#cv">LinkedIn Optimization</a></li>
+          <li><a href="#cv">Cover Letter</a></li>
+          <li><a href="#cv">Data Entry</a></li>
+          <li><a href="#cv">MS Office Work</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <div class="ft-col-title">Contact</div>
+        <ul class="ft-links">
+          <li><a href="mailto:anamaitech5@gmail.com">📧 Email Us</a></li>
+          <li><a href="https://www.instagram.com/anamaistudio" target="_blank">📸 Instagram</a></li>
+          <li><a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank">👥 Facebook</a></li>
+          <li><a href="#faq">❓ FAQ</a></li>
+          <li><a href="#newsletter">📬 Newsletter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="ft-bottom">
+      <span>© 2025 Anam AI Studio — Made with ❤️ in Pakistan 🇵🇰</span>
+      <span>Contact: <a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════
+     FLOATING BUTTONS
+═══════════════════════════════════ -->
+<div class="floats">
+  <!-- PLACEHOLDER WhatsApp button — replace XXXXXXXXXXX with your number -->
+  <a href="https://wa.me/92XXXXXXXXXXX?text=Hi%20Anam!%20I%20found%20your%20website."
+     target="_blank" class="f-btn wa-btn" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button class="f-btn top-btn" id="top-btn" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

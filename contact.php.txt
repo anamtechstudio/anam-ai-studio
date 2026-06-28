@@ -1,0 +1,60 @@
+<?php
+/**
+ * ANAM AI STUDIO — contact.php
+ * Contact Form Backend Handler
+ * Replace email below with your real email address.
+ */
+
+// Allow CORS if needed
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+
+// Only accept POST requests
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo json_encode(['success' => false, 'message' => 'Invalid request method.']);
+    exit;
+}
+
+// Sanitize & collect form data
+$name    = htmlspecialchars(strip_tags(trim($_POST['name']    ?? '')));
+$email   = filter_var(trim($_POST['email']   ?? ''), FILTER_SANITIZE_EMAIL);
+$subject = htmlspecialchars(strip_tags(trim($_POST['subject'] ?? '')));
+$message = htmlspecialchars(strip_tags(trim($_POST['message'] ?? '')));
+
+// Basic validation
+if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+    echo json_encode(['success' => false, 'message' => 'All fields are required.']);
+    exit;
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo json_encode(['success' => false, 'message' => 'Invalid email address.']);
+    exit;
+}
+
+// ── YOUR EMAIL HERE ──
+$to = 'your@email.com';
+
+$email_subject = "Anam AI Studio | New Contact: $subject";
+$email_body    = "
+New message from Anam AI Studio contact form:
+
+Name:    $name
+Email:   $email
+Subject: $subject
+
+Message:
+$message
+";
+
+$headers  = "From: noreply@anamaistudio.com\r\n";
+$headers .= "Reply-To: $email\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion();
+
+// Send mail
+if (mail($to, $email_subject, $email_body, $headers)) {
+    echo json_encode(['success' => true, 'message' => 'Message sent successfully! JazakAllah 🌟']);
+} else {
+    echo json_encode(['success' => false, 'message' => 'Failed to send. Please try WhatsApp instead.']);
+}
+?>
