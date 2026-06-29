@@ -3,854 +3,909 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Anam AI Studio — Free AI Tools, Tips & Tricks, Professional CV Design, LinkedIn Optimization for Students, Freelancers & Businesses in Pakistan."/>
-<meta name="keywords" content="AI Tools Pakistan, CV Design, LinkedIn Optimization, ChatGPT Tips, Free AI Resources, Anam AI Studio"/>
+<meta name="description" content="Anam AI Studio — Learn AI Skills, Free AI Tools, Professional CV Design & LinkedIn Optimization for Students, Freelancers & Businesses in Pakistan."/>
+<meta name="keywords" content="AI Tools Pakistan,CV Design,LinkedIn Optimization,ChatGPT Tips,ElevenLabs,Free AI Resources,Anam AI Studio,Data Science"/>
 <meta name="author" content="Anam AI Studio"/>
-<meta property="og:title" content="Anam AI Studio — AI Tools, Tips & CV Design"/>
-<meta property="og:description" content="Learn AI, access free tools, get your CV designed professionally."/>
+<meta property="og:title" content="Anam AI Studio — Learn AI · Build Career · Grow Business"/>
+<meta property="og:description" content="Free AI tools, tips & professional CV design. Pakistan's #1 AI learning studio."/>
 <meta property="og:type" content="website"/>
-<title>Anam AI Studio — AI Tools, Tips & CV Design</title>
+<meta property="og:image" content="assets/logo.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Anam AI Studio"/>
+<meta name="twitter:description" content="Learn AI · Build Career · Grow Business"/>
+<title>Anam AI Studio — Learn AI · Build Career · Grow Business</title>
+<link rel="icon" href="assets/logo.png" type="image/png"/>
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
-<!-- PAGE LOADER -->
+<!-- LOADER -->
 <div id="loader">
-  <div class="loader-ring"></div>
-  <span class="loader-brand">ANAM AI STUDIO</span>
+  <div class="l-logo"><img src="assets/logo.png" alt="Anam AI Studio Logo"/></div>
+  <div class="l-bar"><div class="l-bar-fill"></div></div>
+  <div class="l-text">LOADING…</div>
 </div>
 
-<!-- ═══════════════════════════════════
-     NAVBAR
-═══════════════════════════════════ -->
+<!-- NAV -->
 <nav id="nav">
-  <div class="container nav-wrap">
-
-    <a href="#hero" class="nav-logo">
-      <div class="logo-icon">✨</div>
-      <span class="logo-text">Anam <span>AI Studio</span></span>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#tools">AI Tools</a></li>
-      <li><a href="#resources">Resources</a></li>
-      <li><a href="#tips">Tips & Tricks</a></li>
-      <li><a href="#cv">CV Design</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-right">
-      <div class="search-box" id="search-box">
-        <i class="fas fa-search s-icon"></i>
-        <input type="text" id="s-input" placeholder="Search tips, tools…"/>
-      </div>
-      <button class="s-btn" id="s-btn" aria-label="Search"><i class="fas fa-search"></i></button>
-      <button class="theme-btn" id="theme-btn" aria-label="Toggle theme"><span id="theme-icon">🌙</span></button>
-      <a href="#cv" class="btn btn-primary" style="padding:10px 20px;font-size:13px">Hire Me</a>
-    </div>
-
-    <button class="burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+ <div class="container nav-wrap">
+  <a href="#hero" class="nav-logo">
+   <img src="assets/logo.png" alt="Logo"/>
+   <div class="nav-logo-txt">Anam AI Studio<span>LEARN AI · GROW CAREER · BUILD FUTURE</span></div>
+  </a>
+  <ul class="nav-links">
+   <li><a href="#tools">AI Tools</a></li>
+   <li><a href="#resources">Resources</a></li>
+   <li><a href="#courses">Courses</a></li>
+   <li><a href="#cv">CV Design</a></li>
+   <li><a href="#blog">Blog</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+   <div class="search-wrap" id="sw">
+    <i class="fas fa-search si"></i>
+    <input type="text" id="s-inp" placeholder="Search tools, tips…"/>
+   </div>
+   <button class="icon-btn" id="s-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+   <button class="icon-btn theme-btn" id="theme-btn" aria-label="Theme"><span id="theme-icon">🌙</span></button>
+   <a href="#cv" class="btn btn-p" style="padding:10px 20px;font-size:13px">Hire Me</a>
   </div>
+  <button class="burger" id="burger"><span></span><span></span><span></span></button>
+ </div>
 </nav>
 
-<!-- Drawer overlay -->
-<div id="drawer-overlay"></div>
-
-<!-- Mobile drawer -->
-<div id="mobile-drawer">
-  <button class="drawer-close" id="drawer-close">✕</button>
-  <a href="#tools"><i class="fas fa-robot"></i> AI Tools</a>
-  <a href="#resources"><i class="fas fa-book-open"></i> Free Resources</a>
-  <a href="#tips"><i class="fas fa-lightbulb"></i> Tips & Tricks</a>
-  <a href="#cv"><i class="fas fa-file-alt"></i> CV Design</a>
-  <a href="#blog"><i class="fas fa-pen-nib"></i> Blog</a>
-  <a href="#testimonials"><i class="fas fa-star"></i> Reviews</a>
-  <a href="#about"><i class="fas fa-user"></i> About</a>
-  <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
-  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-  <div style="margin-top:16px">
-    <a href="#cv" class="btn btn-primary" style="justify-content:center">Hire Me <i class="fas fa-arrow-right"></i></a>
-  </div>
+<div id="mob-overlay"></div>
+<div id="mob-nav">
+ <button class="mob-close" id="mob-close">✕</button>
+ <a href="#tools"><i class="fas fa-robot"></i>AI Tools</a>
+ <a href="#resources"><i class="fas fa-book-open"></i>Resources</a>
+ <a href="#courses"><i class="fas fa-graduation-cap"></i>Courses</a>
+ <a href="#templates"><i class="fas fa-palette"></i>Canva Templates</a>
+ <a href="#cv"><i class="fas fa-file-alt"></i>CV Design</a>
+ <a href="#blog"><i class="fas fa-pen-nib"></i>Blog</a>
+ <a href="#testimonials"><i class="fas fa-star"></i>Reviews</a>
+ <a href="#about"><i class="fas fa-user"></i>About</a>
+ <a href="#faq"><i class="fas fa-question-circle"></i>FAQ</a>
+ <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+ <div style="margin-top:14px"><a href="#cv" class="btn btn-p" style="justify-content:center">Hire Me <i class="fas fa-arrow-right"></i></a></div>
 </div>
 
-<!-- ═══════════════════════════════════
-     HERO
-═══════════════════════════════════ -->
+<!-- HERO -->
 <section id="hero">
-  <div class="orb o1"></div>
-  <div class="orb o2"></div>
-  <div class="orb o3"></div>
-
-  <div class="container hero-inner">
-    <!-- Left content -->
-    <div class="reveal">
-      <div class="hero-badge">
-        <span class="pulse-dot"></span>
-        Pakistan's #1 AI Learning Studio
-      </div>
-
-      <h1 class="hero-title">
-        Master AI.<br>
-        <span class="grad">Grow Faster.</span><br>
-        Stand Out.
-      </h1>
-
-      <p class="hero-desc">
-        Free AI tools, tips & tricks, professional CV design, and LinkedIn optimization — all in one place. Built for students, freelancers & creators in Pakistan.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#tools" class="btn btn-primary"><i class="fas fa-robot"></i> Explore AI Tools</a>
-        <a href="#cv" class="btn btn-ghost"><i class="fas fa-file-alt"></i> Get My CV Done</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="num"><span data-count="5000">0</span>+</span>
-          <div class="lbl">Students Helped</div>
-        </div>
-        <div class="stat">
-          <span class="num"><span data-count="100">0</span>+</span>
-          <div class="lbl">Free Resources</div>
-        </div>
-        <div class="stat">
-          <span class="num"><span data-count="200">0</span>+</span>
-          <div class="lbl">CVs Designed</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Right visual -->
-    <div class="hero-visual reveal d2">
-      <div class="mockup">
-        <div class="mockup-dots">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="m-bar w80"></div>
-        <div class="m-bar w60"></div>
-        <div class="m-bar w90"></div>
-        <div class="m-chip">
-          <div class="m-chip-ico">🤖</div>
-          <div class="m-chip-lines">
-            <div class="line"></div>
-            <div class="line s"></div>
-          </div>
-        </div>
-        <div class="m-bar w40" style="margin-top:12px"></div>
-      </div>
-      <div class="fc fc1">🚀 AI Tips Daily</div>
-      <div class="fc fc2">✨ CV in 24h</div>
-    </div>
+ <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+ <div class="container hero-grid">
+  <div class="reveal">
+   <div class="hero-badge"><span class="pdot"></span>Pakistan's #1 AI Learning Studio</div>
+   <h1 class="hero-title">Learn AI.<br><span class="g">Build Career.</span><br>Grow Business.</h1>
+   <p class="hero-tag">
+    <span>Learn AI Skills</span> &nbsp;•&nbsp; <span>Build Your Career</span> &nbsp;•&nbsp; <span>Grow Your Business</span>
+   </p>
+   <p class="hero-desc">Free AI tools, tips & tricks, professional CV design and LinkedIn optimization — all in one place. Made for students, freelancers & creators in Pakistan.</p>
+   <div class="hero-cta">
+    <a href="#tools" class="btn btn-p"><i class="fas fa-robot"></i>Explore AI Tools</a>
+    <a href="#cv" class="btn btn-g"><i class="fas fa-file-alt"></i>Get My CV Done</a>
+   </div>
+   <div class="hero-stats">
+    <div class="hstat"><span class="n"><span data-count="5000">0</span>+</span><div class="l">Students Helped</div></div>
+    <div class="hstat"><span class="n"><span data-count="100">0</span>+</span><div class="l">Free Resources</div></div>
+    <div class="hstat"><span class="n"><span data-count="200">0</span>+</span><div class="l">CVs Designed</div></div>
+   </div>
   </div>
+  <div class="hero-photo-wrap reveal d2">
+   <div class="hero-photo-ring"><img src="assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/></div>
+   <div class="hero-fc hfc1"><div class="fc-ico">🤖</div>AI Tips Daily</div>
+   <div class="hero-fc hfc2"><div class="fc-ico">✨</div>CV in 24h</div>
+   <div class="hero-fc hfc3"><div class="fc-ico">🎓</div>Free Resources</div>
+  </div>
+ </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     FEATURED AI TOOLS
-═══════════════════════════════════ -->
+<!-- AI TOOLS DIRECTORY -->
 <section class="section" id="tools">
-  <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">AI Tools</span>
-      <h2 class="h2">Best Free <span class="grad">AI Tools</span> for You</h2>
-      <p class="subtext">Handpicked tools that actually work — for assignments, content, career & productivity.</p>
-    </div>
-
-    <div class="tools-grid">
-      <div class="card tool-card reveal d1">
-        <div class="tool-ico">🎙️</div>
-        <span class="pill">Voice AI</span>
-        <h3 class="tool-name">ElevenLabs</h3>
-        <p class="tool-desc">Clone your voice or generate studio-quality voiceovers in seconds. Perfect for reels, podcasts & AI content creation.</p>
-        <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card tool-card reveal d2">
-        <div class="tool-ico">✍️</div>
-        <span class="pill">Writing AI</span>
-        <h3 class="tool-name">ChatGPT</h3>
-        <p class="tool-desc">Write assignments, emails, captions, cover letters & more. The most powerful AI writing assistant — free to use.</p>
-        <a href="https://chat.openai.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card tool-card reveal d3">
-        <div class="tool-ico">🎨</div>
-        <span class="pill">Design AI</span>
-        <h3 class="tool-name">Canva AI</h3>
-        <p class="tool-desc">Design stunning thumbnails, posters, presentations & CVs using powerful AI-driven design tools. No designer needed.</p>
-        <a href="https://canva.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card tool-card reveal d1">
-        <div class="tool-ico">🎬</div>
-        <span class="pill">Video AI</span>
-        <h3 class="tool-name">CapCut AI</h3>
-        <p class="tool-desc">Auto-captions, AI effects, and one-click video editing. No watermark. Best for Instagram Reels & TikTok content.</p>
-        <a href="https://capcut.com" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card tool-card reveal d2">
-        <div class="tool-ico">📊</div>
-        <span class="pill">Productivity AI</span>
-        <h3 class="tool-name">Notion AI</h3>
-        <p class="tool-desc">Organize your study notes, projects & tasks with AI summaries, auto-formatting and smart databases.</p>
-        <a href="https://notion.so" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card tool-card reveal d3">
-        <div class="tool-ico">🔍</div>
-        <span class="pill">Research AI</span>
-        <h3 class="tool-name">Perplexity AI</h3>
-        <p class="tool-desc">Get instant, cited answers for research papers, assignments & fact-checking. Smarter than traditional search.</p>
-        <a href="https://perplexity.ai" target="_blank" rel="noopener" class="tool-link">Try Free <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">AI Tools Directory</span>
+   <h2 class="h2">100+ Best <span class="g">Free AI Tools</span></h2>
+   <p class="sub">Handpicked tools across every category — tested and verified for students, freelancers & creators.</p>
   </div>
+  <div class="tools-search reveal">
+   <i class="fas fa-search"></i>
+   <input type="text" id="tool-search" placeholder="Search tools by name or category…"/>
+  </div>
+  <div class="tools-filter reveal">
+   <button class="filter-btn active" data-cat="all">All Tools</button>
+   <button class="filter-btn" data-cat="writing">Writing AI</button>
+   <button class="filter-btn" data-cat="image">Image AI</button>
+   <button class="filter-btn" data-cat="video">Video AI</button>
+   <button class="filter-btn" data-cat="voice">Voice AI</button>
+   <button class="filter-btn" data-cat="design">Design</button>
+   <button class="filter-btn" data-cat="productivity">Productivity</button>
+   <button class="filter-btn" data-cat="coding">Coding</button>
+   <button class="filter-btn" data-cat="research">Research</button>
+   <button class="filter-btn" data-cat="seo">SEO</button>
+   <button class="filter-btn" data-cat="career">Career</button>
+   <button class="filter-btn" data-cat="marketing">Marketing</button>
+   <button class="filter-btn" data-cat="business">Business</button>
+   <button class="filter-btn" data-cat="students">Students</button>
+   <button class="filter-btn" data-cat="data">Data</button>
+  </div>
+  <div class="tools-grid">
+
+   <!-- WRITING AI -->
+   <div class="card tool-card reveal d1" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">✍️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">ChatGPT</div><div class="tool-desc">World's most powerful AI writing assistant. Write essays, emails, code, captions & more.</div>
+    <div class="tool-footer"><span class="pill">Writing AI</span><a href="https://chat.openai.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">🤖</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Claude AI</div><div class="tool-desc">Anthropic's AI for long-form writing, analysis, research, coding & intelligent conversations.</div>
+    <div class="tool-footer"><span class="pill">Writing AI</span><a href="https://claude.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">💎</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Gemini AI</div><div class="tool-desc">Google's AI for writing, research, coding & multimodal tasks integrated with Google Workspace.</div>
+    <div class="tool-footer"><span class="pill">Writing AI</span><a href="https://gemini.google.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d1" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">📝</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Copy.ai</div><div class="tool-desc">AI-powered copywriting for blogs, ads, product descriptions, social media & marketing content.</div>
+    <div class="tool-footer"><span class="pill">Writing AI</span><a href="https://copy.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">🖊️</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Jasper AI</div><div class="tool-desc">Advanced AI content generator for blogs, marketing copy, emails and social media posts.</div>
+    <div class="tool-footer"><span class="pill">Writing AI</span><a href="https://jasper.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="writing">
+    <div class="tool-card-top"><div class="tool-ico">📖</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Perplexity AI</div><div class="tool-desc">AI-powered research tool with real-time web access. Get cited answers instantly. Better than Google.</div>
+    <div class="tool-footer"><span class="pill">Research</span><a href="https://perplexity.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- IMAGE AI -->
+   <div class="card tool-card reveal d1" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">🎨</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Adobe Firefly</div><div class="tool-desc">Adobe's AI image generator. Create stunning visuals, illustrations & photos from text prompts.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://firefly.adobe.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">🖼️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Midjourney</div><div class="tool-desc">World's best AI art generator. Create breathtaking images from simple text descriptions.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://midjourney.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">🎭</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">DALL·E 3</div><div class="tool-desc">OpenAI's image generation inside ChatGPT. Hyper-realistic and artistic images from text.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://openai.com/dall-e-3" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d1" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">✂️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Remove.bg</div><div class="tool-desc">Remove image backgrounds instantly in one click with AI. Perfect for product photos & profiles.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://remove.bg" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">⬆️</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Upscayl</div><div class="tool-desc">Free AI image upscaler. Enhance low-quality images to HD and 4K without losing quality.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://upscayl.org" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="image">
+    <div class="tool-card-top"><div class="tool-ico">🌟</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Leonardo AI</div><div class="tool-desc">Professional AI image creation with fine control. Great for game art, illustration & design.</div>
+    <div class="tool-footer"><span class="pill">Image AI</span><a href="https://leonardo.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- VIDEO AI -->
+   <div class="card tool-card reveal d1" data-cat="video">
+    <div class="tool-card-top"><div class="tool-ico">🎬</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">CapCut AI</div><div class="tool-desc">Auto-captions, AI effects, one-click editing. Best for Reels, TikTok & YouTube Shorts.</div>
+    <div class="tool-footer"><span class="pill">Video AI</span><a href="https://capcut.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="video">
+    <div class="tool-card-top"><div class="tool-ico">🎥</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Runway ML</div><div class="tool-desc">AI video generation, editing & special effects. Generate videos from text or images.</div>
+    <div class="tool-footer"><span class="pill">Video AI</span><a href="https://runwayml.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="video">
+    <div class="tool-card-top"><div class="tool-ico">🎞️</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Synthesia</div><div class="tool-desc">Create professional AI avatar videos without camera or studio. Great for courses & explainers.</div>
+    <div class="tool-footer"><span class="pill">Video AI</span><a href="https://synthesia.io" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d1" data-cat="video">
+    <div class="tool-card-top"><div class="tool-ico">📽️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">InVideo AI</div><div class="tool-desc">Turn scripts & ideas into professional videos with AI. Perfect for YouTube, reels & ads.</div>
+    <div class="tool-footer"><span class="pill">Video AI</span><a href="https://invideo.io" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- VOICE AI -->
+   <div class="card tool-card reveal d1" data-cat="voice">
+    <div class="tool-card-top"><div class="tool-ico">🎙️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">ElevenLabs</div><div class="tool-desc">Clone your voice or generate studio-quality voiceovers in seconds. #1 voice AI globally.</div>
+    <div class="tool-footer"><span class="pill">Voice AI</span><a href="https://elevenlabs.io" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="voice">
+    <div class="tool-card-top"><div class="tool-ico">🔊</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Murf AI</div><div class="tool-desc">Professional AI voiceovers in 120+ languages. Perfect for videos, ads & e-learning content.</div>
+    <div class="tool-footer"><span class="pill">Voice AI</span><a href="https://murf.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="voice">
+    <div class="tool-card-top"><div class="tool-ico">🎵</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Suno AI</div><div class="tool-desc">Create full songs with vocals, music & lyrics from text prompts. AI music generation.</div>
+    <div class="tool-footer"><span class="pill">Voice AI</span><a href="https://suno.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- DESIGN -->
+   <div class="card tool-card reveal d1" data-cat="design">
+    <div class="tool-card-top"><div class="tool-ico">🎨</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Canva AI</div><div class="tool-desc">Design everything with AI — CVs, thumbnails, posts, presentations. Drag-and-drop easy.</div>
+    <div class="tool-footer"><span class="pill">Design</span><a href="https://canva.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="design">
+    <div class="tool-card-top"><div class="tool-ico">✏️</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Adobe Express</div><div class="tool-desc">Quick AI-powered design for social media graphics, flyers, logos & marketing materials.</div>
+    <div class="tool-footer"><span class="pill">Design</span><a href="https://express.adobe.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="design">
+    <div class="tool-card-top"><div class="tool-ico">🖌️</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Looka</div><div class="tool-desc">AI logo designer. Create a professional logo for your brand in minutes. Free preview.</div>
+    <div class="tool-footer"><span class="pill">Design</span><a href="https://looka.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- PRODUCTIVITY -->
+   <div class="card tool-card reveal d1" data-cat="productivity">
+    <div class="tool-card-top"><div class="tool-ico">📊</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Notion AI</div><div class="tool-desc">AI-powered notes, databases, project management & team wikis. Study notes & task tracking.</div>
+    <div class="tool-footer"><span class="pill">Productivity</span><a href="https://notion.so" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="productivity">
+    <div class="tool-card-top"><div class="tool-ico">📋</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Trello AI</div><div class="tool-desc">AI-enhanced project management boards. Manage freelance projects, assignments & tasks.</div>
+    <div class="tool-footer"><span class="pill">Productivity</span><a href="https://trello.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="productivity">
+    <div class="tool-card-top"><div class="tool-ico">📅</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Motion AI</div><div class="tool-desc">AI automatically schedules your tasks and meetings. Best AI productivity planner.</div>
+    <div class="tool-footer"><span class="pill">Productivity</span><a href="https://usemotion.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d1" data-cat="productivity">
+    <div class="tool-card-top"><div class="tool-ico">📝</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Otter.ai</div><div class="tool-desc">AI meeting transcription and note-taking. Records, transcribes & summarizes meetings.</div>
+    <div class="tool-footer"><span class="pill">Productivity</span><a href="https://otter.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- CODING -->
+   <div class="card tool-card reveal d1" data-cat="coding">
+    <div class="tool-card-top"><div class="tool-ico">💻</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">GitHub Copilot</div><div class="tool-desc">AI pair programmer that autocompletes code. Supports all major programming languages.</div>
+    <div class="tool-footer"><span class="pill">Coding</span><a href="https://github.com/features/copilot" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="coding">
+    <div class="tool-card-top"><div class="tool-ico">🔧</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Cursor AI</div><div class="tool-desc">AI-powered code editor. Write, edit & debug code with natural language instructions.</div>
+    <div class="tool-footer"><span class="pill">Coding</span><a href="https://cursor.sh" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="coding">
+    <div class="tool-card-top"><div class="tool-ico">⚡</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Replit AI</div><div class="tool-desc">Code, build & deploy apps in the browser with AI assistance. Great for beginners.</div>
+    <div class="tool-footer"><span class="pill">Coding</span><a href="https://replit.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d1" data-cat="coding">
+    <div class="tool-card-top"><div class="tool-ico">🌐</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">v0 by Vercel</div><div class="tool-desc">Generate full UI components from text prompts. Build websites instantly with AI.</div>
+    <div class="tool-footer"><span class="pill">Coding</span><a href="https://v0.dev" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- RESEARCH -->
+   <div class="card tool-card reveal d1" data-cat="research">
+    <div class="tool-card-top"><div class="tool-ico">🔍</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Consensus AI</div><div class="tool-desc">AI-powered academic search engine. Find research papers & scientific consensus instantly.</div>
+    <div class="tool-footer"><span class="pill">Research</span><a href="https://consensus.app" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="research">
+    <div class="tool-card-top"><div class="tool-ico">📚</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Semantic Scholar</div><div class="tool-desc">AI-powered research tool with 200M+ academic papers. Perfect for university research.</div>
+    <div class="tool-footer"><span class="pill">Research</span><a href="https://semanticscholar.org" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="research">
+    <div class="tool-card-top"><div class="tool-ico">📄</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">ChatPDF</div><div class="tool-desc">Upload any PDF and chat with it. Summarize research papers, textbooks & documents.</div>
+    <div class="tool-footer"><span class="pill">Research</span><a href="https://chatpdf.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- SEO -->
+   <div class="card tool-card reveal d1" data-cat="seo">
+    <div class="tool-card-top"><div class="tool-ico">📈</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Semrush AI</div><div class="tool-desc">AI-powered SEO, competitor analysis, keyword research & content marketing platform.</div>
+    <div class="tool-footer"><span class="pill">SEO</span><a href="https://semrush.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="seo">
+    <div class="tool-card-top"><div class="tool-ico">🔑</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Ubersuggest</div><div class="tool-desc">Free AI SEO tool for keyword research, content ideas & competitor analysis by Neil Patel.</div>
+    <div class="tool-footer"><span class="pill">SEO</span><a href="https://neilpatel.com/ubersuggest" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- CAREER -->
+   <div class="card tool-card reveal d1" data-cat="career">
+    <div class="tool-card-top"><div class="tool-ico">📄</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Resume.io</div><div class="tool-desc">AI-powered resume builder with professional templates. ATS-optimized CVs in minutes.</div>
+    <div class="tool-footer"><span class="pill">Career</span><a href="https://resume.io" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="career">
+    <div class="tool-card-top"><div class="tool-ico">💼</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">LinkedIn AI</div><div class="tool-desc">Use LinkedIn's AI features to write your profile, optimize headline & generate cover letters.</div>
+    <div class="tool-footer"><span class="pill">Career</span><a href="https://linkedin.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="career">
+    <div class="tool-card-top"><div class="tool-ico">🎯</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Kickresume</div><div class="tool-desc">AI resume writer & checker. Create stunning resumes and cover letters with AI suggestions.</div>
+    <div class="tool-footer"><span class="pill">Career</span><a href="https://kickresume.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- MARKETING -->
+   <div class="card tool-card reveal d1" data-cat="marketing">
+    <div class="tool-card-top"><div class="tool-ico">📣</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Buffer AI</div><div class="tool-desc">AI social media scheduler & content generator. Schedule posts across all platforms.</div>
+    <div class="tool-footer"><span class="pill">Marketing</span><a href="https://buffer.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="marketing">
+    <div class="tool-card-top"><div class="tool-ico">📧</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Mailchimp AI</div><div class="tool-desc">AI email marketing with smart send-time optimization & personalized campaign suggestions.</div>
+    <div class="tool-footer"><span class="pill">Marketing</span><a href="https://mailchimp.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- BUSINESS -->
+   <div class="card tool-card reveal d1" data-cat="business">
+    <div class="tool-card-top"><div class="tool-ico">🏢</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Gamma AI</div><div class="tool-desc">AI presentation maker. Create stunning slides, websites & docs from a prompt in seconds.</div>
+    <div class="tool-footer"><span class="pill">Business</span><a href="https://gamma.app" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="business">
+    <div class="tool-card-top"><div class="tool-ico">💰</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Beautiful.ai</div><div class="tool-desc">AI-powered presentation design that automatically formats and designs your slides.</div>
+    <div class="tool-footer"><span class="pill">Business</span><a href="https://beautiful.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- STUDENTS -->
+   <div class="card tool-card reveal d1" data-cat="students">
+    <div class="tool-card-top"><div class="tool-ico">🎓</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Quizlet AI</div><div class="tool-desc">AI study assistant with flashcards, quizzes & practice tests. Prepare for any exam fast.</div>
+    <div class="tool-footer"><span class="pill">Students</span><a href="https://quizlet.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="students">
+    <div class="tool-card-top"><div class="tool-ico">📐</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Photomath</div><div class="tool-desc">Scan any math problem and get step-by-step AI solutions. Best tool for students.</div>
+    <div class="tool-footer"><span class="pill">Students</span><a href="https://photomath.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d3" data-cat="students">
+    <div class="tool-card-top"><div class="tool-ico">🧠</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Khan Academy AI</div><div class="tool-desc">Free AI tutor (Khanmigo) that explains topics in every subject. Perfect for all grades.</div>
+    <div class="tool-footer"><span class="pill">Students</span><a href="https://khanacademy.org" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+   <!-- DATA -->
+   <div class="card tool-card reveal d1" data-cat="data">
+    <div class="tool-card-top"><div class="tool-ico">📊</div><span class="pill-freemium pill">Freemium</span></div>
+    <div class="tool-name">Julius AI</div><div class="tool-desc">Chat with your data. Upload CSV/Excel and get instant AI analysis, charts & insights.</div>
+    <div class="tool-footer"><span class="pill">Data</span><a href="https://julius.ai" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+   <div class="card tool-card reveal d2" data-cat="data">
+    <div class="tool-card-top"><div class="tool-ico">🔬</div><span class="pill-free pill">Free</span></div>
+    <div class="tool-name">Google Colab</div><div class="tool-desc">Free AI & data science notebook with GPU access. Perfect for Python, ML & data projects.</div>
+    <div class="tool-footer"><span class="pill">Data</span><a href="https://colab.research.google.com" target="_blank" class="tool-link">Visit <i class="fas fa-arrow-right"></i></a></div>
+   </div>
+
+  </div><!-- /tools-grid -->
+ </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     FREE RESOURCES / CATEGORIES
-═══════════════════════════════════ -->
+<!-- COURSES -->
+<section class="section" id="courses">
+ <div class="container">
+  <div class="reveal" style="text-align:center">
+   <span class="eyebrow">Learning</span>
+   <h2 class="h2">Free <span class="g">AI Courses</span></h2>
+   <p class="sub" style="margin:0 auto">Curated courses to master AI tools and build a successful career.</p>
+  </div>
+  <div class="courses-grid">
+   <div class="card course-card reveal d1">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">
+     <span style="position:relative;z-index:1">🤖</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">Beginner</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">ChatGPT Mastery — Zero to Pro</div>
+     <div class="course-desc">Master ChatGPT for writing, coding, business & productivity. 50+ practical prompts included.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 4 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> Beginner</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+   <div class="card course-card reveal d2">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#4F46E5,#8B5CF6)">
+     <span style="position:relative;z-index:1">🎨</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">All Levels</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">Canva Complete — Design Like a Pro</div>
+     <div class="course-desc">Master Canva for CVs, thumbnails, posts, presentations & brand design from scratch.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 6 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> All Levels</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+   <div class="card course-card reveal d3">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#EC4899,#8B5CF6)">
+     <span style="position:relative;z-index:1">💼</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">Beginner</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">LinkedIn Optimization Masterclass</div>
+     <div class="course-desc">Build a LinkedIn profile that attracts recruiters, clients & opportunities automatically.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 3 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> Beginner</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+   <div class="card course-card reveal d1">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#6D28D9,#EC4899)">
+     <span style="position:relative;z-index:1">✍️</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">Intermediate</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">Prompt Engineering — AI Communication</div>
+     <div class="course-desc">Learn to write perfect prompts for ChatGPT, Claude, Gemini & Midjourney. Get better results.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 5 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> Intermediate</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+   <div class="card course-card reveal d2">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#3B82F6,#8B5CF6)">
+     <span style="position:relative;z-index:1">🖥️</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">Beginner</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">MS Office Complete — Word, Excel, PowerPoint</div>
+     <div class="course-desc">Master Microsoft Office for jobs, freelancing & university. Practical projects included.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 8 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> Beginner</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+   <div class="card course-card reveal d3">
+    <div class="course-thumb" style="background:linear-gradient(135deg,#8B5CF6,#3B82F6)">
+     <span style="position:relative;z-index:1">💰</span><div class="course-thumb-overlay"></div>
+    </div>
+    <div class="course-body">
+     <div class="course-meta"><span class="pill">Beginner</span><span class="pill-free pill">Free</span></div>
+     <div class="course-title">Freelancing on Fiverr & Upwork</div>
+     <div class="course-desc">Start freelancing from zero. Create gigs, get clients & earn from home with AI skills.</div>
+     <div class="course-info">
+      <span class="ci"><i class="fas fa-clock"></i> 5 Hours</span>
+      <span class="ci"><i class="fas fa-signal"></i> Beginner</span>
+     </div>
+     <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;font-size:13px">Enroll Free</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- CANVA TEMPLATES -->
+<section class="section" id="templates">
+ <div class="container">
+  <div class="reveal" style="text-align:center">
+   <span class="eyebrow">Canva Templates</span>
+   <h2 class="h2">Free <span class="g">Canva Templates</span></h2>
+   <p class="sub" style="margin:0 auto">Professional templates for every need — download, customize & use instantly on Canva.</p>
+  </div>
+  <div class="templates-grid">
+   <div class="card tmpl-card reveal d1"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)"><span>📄</span></div><div class="tmpl-body"><div class="tmpl-name">Resume Template</div><div class="tmpl-cat">Career · ATS-Friendly</div></div></div>
+   <div class="card tmpl-card reveal d2"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#4F46E5,#8B5CF6)"><span>📋</span></div><div class="tmpl-body"><div class="tmpl-name">CV Template</div><div class="tmpl-cat">Career · Premium Design</div></div></div>
+   <div class="card tmpl-card reveal d3"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#EC4899,#8B5CF6)"><span>✉️</span></div><div class="tmpl-body"><div class="tmpl-name">Cover Letter</div><div class="tmpl-cat">Career · Professional</div></div></div>
+   <div class="card tmpl-card reveal d1"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#6D28D9,#4F46E5)"><span>🖼️</span></div><div class="tmpl-body"><div class="tmpl-name">LinkedIn Banner</div><div class="tmpl-cat">Social Media · 1584×396</div></div></div>
+   <div class="card tmpl-card reveal d2"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#3B82F6,#8B5CF6)"><span>🎬</span></div><div class="tmpl-body"><div class="tmpl-name">YouTube Thumbnail</div><div class="tmpl-cat">Content · 1280×720</div></div></div>
+   <div class="card tmpl-card reveal d3"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#8B5CF6,#EC4899)"><span>📊</span></div><div class="tmpl-body"><div class="tmpl-name">Presentation</div><div class="tmpl-cat">Business · 16:9</div></div></div>
+   <div class="card tmpl-card reveal d1"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#EC4899,#6D28D9)"><span>📱</span></div><div class="tmpl-body"><div class="tmpl-name">Instagram Post</div><div class="tmpl-cat">Social Media · 1080×1080</div></div></div>
+   <div class="card tmpl-card reveal d2"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#4F46E5,#3B82F6)"><span>👥</span></div><div class="tmpl-body"><div class="tmpl-name">Facebook Post</div><div class="tmpl-cat">Social Media · 1200×630</div></div></div>
+   <div class="card tmpl-card reveal d3"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#6D28D9,#EC4899)"><span>💳</span></div><div class="tmpl-body"><div class="tmpl-name">Business Card</div><div class="tmpl-cat">Branding · 3.5×2 in</div></div></div>
+   <div class="card tmpl-card reveal d1"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#8B5CF6,#3B82F6)"><span>📜</span></div><div class="tmpl-body"><div class="tmpl-name">Certificate</div><div class="tmpl-cat">Education · A4</div></div></div>
+   <div class="card tmpl-card reveal d2"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#3B82F6,#6D28D9)"><span>🗂️</span></div><div class="tmpl-body"><div class="tmpl-name">Portfolio</div><div class="tmpl-cat">Personal · Multi-page</div></div></div>
+   <div class="card tmpl-card reveal d3"><div class="tmpl-thumb" style="background:linear-gradient(135deg,#EC4899,#4F46E5)"><span>📄</span></div><div class="tmpl-body"><div class="tmpl-name">Invoice Template</div><div class="tmpl-cat">Business · Freelancing</div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:40px" class="reveal">
+   <a href="https://www.canva.com" target="_blank" class="btn btn-p"><i class="fas fa-external-link-alt"></i>Browse All on Canva</a>
+  </div>
+ </div>
+</section>
+
+<!-- FREE RESOURCES -->
 <section class="section" id="resources">
-  <div class="container">
-    <div class="reveal" style="text-align:center">
-      <span class="eyebrow">Free Resources</span>
-      <h2 class="h2">Explore <span class="grad">All Categories</span></h2>
-      <p class="subtext" style="margin:0 auto">Find exactly what you need — from AI tools to career resources. All free.</p>
-    </div>
-
-    <div class="cats">
-      <div class="card cat reveal"><span class="cat-emoji">🤖</span><div class="cat-name">AI Tools</div><div class="cat-count">24 Tools</div></div>
-      <div class="card cat reveal d1"><span class="cat-emoji">💡</span><div class="cat-name">AI Tips</div><div class="cat-count">50+ Tips</div></div>
-      <div class="card cat reveal d2"><span class="cat-emoji">📄</span><div class="cat-name">CV Templates</div><div class="cat-count">10 Templates</div></div>
-      <div class="card cat reveal d3"><span class="cat-emoji">💼</span><div class="cat-name">LinkedIn Guides</div><div class="cat-count">10 Guides</div></div>
-      <div class="card cat reveal"><span class="cat-emoji">🎓</span><div class="cat-name">For Students</div><div class="cat-count">30+ Resources</div></div>
-      <div class="card cat reveal d1"><span class="cat-emoji">🖥️</span><div class="cat-name">Freelancing</div><div class="cat-count">20+ Guides</div></div>
-      <div class="card cat reveal d2"><span class="cat-emoji">📱</span><div class="cat-name">Content Creation</div><div class="cat-count">15 Tutorials</div></div>
-      <div class="card cat reveal d3"><span class="cat-emoji">⚡</span><div class="cat-name">Productivity</div><div class="cat-count">18 Hacks</div></div>
-    </div>
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">Free Resources</span>
+   <h2 class="h2">Download <span class="g">Free Resources</span></h2>
+   <p class="sub">Prompt libraries, cheat sheets, templates & guides — all free for students & professionals.</p>
   </div>
+  <div class="res-grid">
+   <div class="card res-card reveal d1">
+    <div class="res-ico">💬</div>
+    <div class="res-title">AI Prompt Library</div>
+    <p class="res-desc">500+ ready-to-use prompts for ChatGPT, Claude & Gemini. For writing, coding, business & study.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+   <div class="card res-card reveal d2">
+    <div class="res-ico">📄</div>
+    <div class="res-title">Resume Templates</div>
+    <p class="res-desc">10 ATS-friendly resume templates in Word & Canva format. Used by 1000+ job seekers.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+   <div class="card res-card reveal d3">
+    <div class="res-ico">📋</div>
+    <div class="res-title">AI Cheat Sheets</div>
+    <p class="res-desc">Quick reference guides for ChatGPT, Canva AI, ElevenLabs & more. Print-ready PDFs.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+   <div class="card res-card reveal d1">
+    <div class="res-ico">📚</div>
+    <div class="res-title">Career Guides</div>
+    <p class="res-desc">Step-by-step guides for LinkedIn optimization, CV writing & freelancing setup in Pakistan.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+   <div class="card res-card reveal d2">
+    <div class="res-ico">❓</div>
+    <div class="res-title">Interview Questions</div>
+    <p class="res-desc">200+ common interview questions with AI-assisted model answers for tech & non-tech roles.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+   <div class="card res-card reveal d3">
+    <div class="res-ico">💡</div>
+    <div class="res-title">AI for Students Guide</div>
+    <p class="res-desc">Complete guide on using AI for assignments, research, presentations & exam preparation.</p>
+    <a href="#contact" class="btn btn-p" style="font-size:13px"><i class="fas fa-download"></i>Download Free</a>
+   </div>
+  </div>
+ </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     AI TIPS & TRICKS
-═══════════════════════════════════ -->
-<section class="section" id="tips">
-  <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">Tips & Tricks</span>
-      <h2 class="h2">Top <span class="grad">AI Tips</span> This Week</h2>
-      <p class="subtext">Practical, copy-paste ready tips to save you hours every week.</p>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;margin-top:48px">
-      <div class="card reveal d1" style="padding:28px">
-        <div style="font-size:28px;margin-bottom:14px">💬</div>
-        <span class="pill">ChatGPT</span>
-        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">10 Prompts Every Student Needs</h3>
-        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Use these prompts for assignments, quizzes, presentations & research. Save hours daily with the right ChatGPT commands.</p>
-        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card reveal d2" style="padding:28px">
-        <div style="font-size:28px;margin-bottom:14px">🎙️</div>
-        <span class="pill">ElevenLabs</span>
-        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">Clone Your Voice in 60 Seconds</h3>
-        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Step-by-step guide to clone your voice using ElevenLabs free plan. Perfect for reels, voiceovers & AI content.</p>
-        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="card reveal d3" style="padding:28px">
-        <div style="font-size:28px;margin-bottom:14px">🖼️</div>
-        <span class="pill">Canva + AI</span>
-        <h3 style="font-family:var(--font-display);font-size:17px;font-weight:600;margin:12px 0 8px">Create Viral Thumbnails with AI</h3>
-        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.65">Use Canva's AI tools to design click-worthy thumbnails in 5 minutes. No design experience needed at all.</p>
-        <a href="#blog" class="tool-link" style="margin-top:16px;display:inline-flex">Read Tip <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     WHY CHOOSE US
-═══════════════════════════════════ -->
+<!-- WHY CHOOSE US -->
 <section class="section" id="why">
-  <div class="container">
-    <div class="why-grid">
-      <div>
-        <div class="reveal">
-          <span class="eyebrow">Why Us</span>
-          <h2 class="h2">Why Choose <span class="grad">Anam AI Studio?</span></h2>
-          <p class="subtext">Real, practical, tested knowledge — not just theory. Made by a student, for students.</p>
-        </div>
-        <div class="features">
-          <div class="feat reveal d1">
-            <div class="feat-ico">🎯</div>
-            <div>
-              <div class="feat-title">100% Practical Content</div>
-              <p class="feat-desc">Every tip and tool is personally tested. No fluff — only what actually works for students and freelancers.</p>
-            </div>
-          </div>
-          <div class="feat reveal d2">
-            <div class="feat-ico">🆓</div>
-            <div>
-              <div class="feat-title">Free for Students</div>
-              <p class="feat-desc">Most resources are completely free. Because quality knowledge should be accessible to every student in Pakistan.</p>
-            </div>
-          </div>
-          <div class="feat reveal d3">
-            <div class="feat-ico">🇵🇰</div>
-            <div>
-              <div class="feat-title">Pakistan-Focused</div>
-              <p class="feat-desc">Content designed for Pakistani students & freelancers — local context, global knowledge.</p>
-            </div>
-          </div>
-          <div class="feat reveal d1">
-            <div class="feat-ico">⚡</div>
-            <div>
-              <div class="feat-title">Always Up to Date</div>
-              <p class="feat-desc">AI changes fast. Fresh tips, new tools and latest tricks updated every single week.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="why-visual reveal d2">
-        <div class="why-art">🤖</div>
-        <div class="stat-badge tr">
-          <div class="badge-n"><span data-count="5000">0</span>+</div>
-          <div class="badge-l">Students Helped</div>
-        </div>
-        <div class="stat-badge bl">
-          <div class="badge-n"><span data-count="200">0</span>+</div>
-          <div class="badge-l">CVs Designed</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     BLOG
-═══════════════════════════════════ -->
-<section class="section" id="blog">
-  <div class="container">
-    <div class="blog-hd reveal">
-      <div>
-        <span class="eyebrow">Blog</span>
-        <h2 class="h2">Latest <span class="grad">AI Tips & Blog</span></h2>
-      </div>
-      <a href="#blog" class="btn btn-ghost">View All <i class="fas fa-arrow-right"></i></a>
-    </div>
-
-    <div class="blog-grid">
-      <article class="card blog-card reveal d1">
-        <div class="blog-img" style="background:linear-gradient(135deg,#7C3AED,#3B82F6)">
-          <span style="position:relative;z-index:1">🎙️</span>
-          <div class="blog-img-tint"></div>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="pill">ElevenLabs</span>
-            <span class="blog-date">June 2025</span>
-          </div>
-          <h3 class="blog-title">ElevenLabs Voice Cloning: Complete Beginner's Guide</h3>
-          <p class="blog-excerpt">Clone your voice in 60 seconds using ElevenLabs free plan. Perfect for reels, podcasts & AI content creation.</p>
-          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </article>
-
-      <article class="card blog-card reveal d2">
-        <div class="blog-img" style="background:linear-gradient(135deg,#1D4ED8,#7C3AED)">
-          <span style="position:relative;z-index:1">✍️</span>
-          <div class="blog-img-tint"></div>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="pill">ChatGPT</span>
-            <span class="blog-date">May 2025</span>
-          </div>
-          <h3 class="blog-title">10 ChatGPT Prompts Every Student Must Know in 2025</h3>
-          <p class="blog-excerpt">Copy-paste prompts for assignments, quizzes, presentations & research. Save hours every week!</p>
-          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </article>
-
-      <article class="card blog-card reveal d3">
-        <div class="blog-img" style="background:linear-gradient(135deg,#6D28D9,#2563EB)">
-          <span style="position:relative;z-index:1">💼</span>
-          <div class="blog-img-tint"></div>
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="pill">LinkedIn</span>
-            <span class="blog-date">April 2025</span>
-          </div>
-          <h3 class="blog-title">LinkedIn Profile Optimization: Get Noticed by Recruiters</h3>
-          <p class="blog-excerpt">Step-by-step guide to optimize your LinkedIn with AI tools. More views, connections & job offers.</p>
-          <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     CV DESIGN SERVICES
-═══════════════════════════════════ -->
-<section class="section" id="cv">
-  <div class="container">
-    <div class="cv-grid">
-      <!-- Left: Plans -->
-      <div>
-        <div class="reveal">
-          <span class="eyebrow">Services</span>
-          <h2 class="h2">Professional <span class="grad">CV Design</span></h2>
-          <p class="subtext">ATS-friendly, recruiter-approved CVs. Stand out from hundreds of applicants.</p>
-        </div>
-
-        <div class="plans">
-          <div class="plan reveal d1">
-            <div class="plan-hd">
-              <div class="plan-name">Basic CV</div>
-              <div class="plan-price">PKR 500</div>
-            </div>
-            <div class="plan-feats">
-              <div class="plan-feat">Single-page professional CV</div>
-              <div class="plan-feat">ATS-friendly format</div>
-              <div class="plan-feat">1 revision included</div>
-              <div class="plan-feat">Delivered in 24 hours</div>
-            </div>
-          </div>
-
-          <div class="plan pop reveal d2">
-            <div class="pop-tag">⭐ MOST POPULAR</div>
-            <div class="plan-hd">
-              <div class="plan-name">Premium CV</div>
-              <div class="plan-price">PKR 1200</div>
-            </div>
-            <div class="plan-feats">
-              <div class="plan-feat">2-page premium CV design</div>
-              <div class="plan-feat">ATS + visually attractive</div>
-              <div class="plan-feat">LinkedIn headline & summary</div>
-              <div class="plan-feat">Cover letter included</div>
-              <div class="plan-feat">3 revisions + 12h delivery</div>
-            </div>
-          </div>
-
-          <div class="plan reveal d3">
-            <div class="plan-hd">
-              <div class="plan-name">LinkedIn Optimization</div>
-              <div class="plan-price">PKR 800</div>
-            </div>
-            <div class="plan-feats">
-              <div class="plan-feat">Full LinkedIn profile rewrite</div>
-              <div class="plan-feat">Keyword optimization</div>
-              <div class="plan-feat">Recruiter-friendly summary</div>
-              <div class="plan-feat">2 revisions included</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top:28px" class="reveal">
-          <!-- PLACEHOLDER: Replace XXXXXXXXXXX with your WhatsApp number -->
-          <a href="https://wa.me/92XXXXXXXXXXX?text=Hi%20Anam!%20I%20want%20to%20order%20a%20CV%20design." target="_blank" class="btn btn-primary">
-            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-          </a>
-        </div>
-      </div>
-
-      <!-- Right: CV Preview -->
-      <div class="cv-preview-card reveal d2">
-        <!-- PLACEHOLDER logo area -->
-        <div class="cv-ph">[ YOUR LOGO HERE — Add logo.png to assets/ ]</div>
-
-        <div class="cv-hd-row">
-          <div class="cv-avatar">👩</div>
-          <div>
-            <div class="cv-info-name">Your Name Here</div>
-            <div class="cv-info-role">Data Science Student · AI Content Creator</div>
-          </div>
-        </div>
-
-        <div class="cv-sec">Skills</div>
-        <div class="skill-row"><div class="skill-lbl">Python</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div></div>
-        <div class="skill-row"><div class="skill-lbl">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="96%"></div></div></div>
-        <div class="skill-row"><div class="skill-lbl">Canva</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div></div>
-        <div class="skill-row"><div class="skill-lbl">MS Office</div><div class="skill-track"><div class="skill-fill" data-w="88%"></div></div></div>
-
-        <div class="cv-sec" style="margin-top:18px">Contact</div>
-        <div style="font-size:13px;color:var(--txt-secondary)">
-          📧 <a href="mailto:anamaitech5@gmail.com" style="color:var(--clr-purple-light)">anamaitech5@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════ -->
-<section class="section" id="testimonials">
-  <div class="container">
-    <div style="text-align:center" class="reveal">
-      <span class="eyebrow">Reviews</span>
-      <h2 class="h2">What People <span class="grad">Say About Us</span></h2>
-      <p class="subtext" style="margin:0 auto">Real feedback from students, freelancers & clients across Pakistan.</p>
-    </div>
-
-    <div class="testi-wrap">
-      <div class="testi-track" id="testi-track">
-
-        <div class="card testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testi-text">"Anam AI Studio ne meri CV bilkul transform kar di! Recruiters notice karne lage. 100% recommended for every student!"</p>
-          <div class="testi-author">
-            <div class="testi-av">F</div>
-            <div>
-              <div class="testi-name">Fatima Malik</div>
-              <div class="testi-role">BS Student, Lahore</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testi-text">"ChatGPT prompts wali tips ne mere assignments ke hours bachaye. Bohot practical content hai — genuinely helpful!"</p>
-          <div class="testi-author">
-            <div class="testi-av">A</div>
-            <div>
-              <div class="testi-name">Ahmed Raza</div>
-              <div class="testi-role">FSc Student, Karachi</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testi-text">"Got my LinkedIn optimized and within 2 weeks had 3 job interview calls! Amazing work. Highly recommended!"</p>
-          <div class="testi-author">
-            <div class="testi-av">S</div>
-            <div>
-              <div class="testi-name">Sara Iqbal</div>
-              <div class="testi-role">Fresh Graduate, Islamabad</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testi-text">"ElevenLabs tutorial bohat helpful thi! Apne YouTube ke liye voice use ki. Subscribers aur views dono barh gaye!"</p>
-          <div class="testi-author">
-            <div class="testi-av">U</div>
-            <div>
-              <div class="testi-name">Usman Tariq</div>
-              <div class="testi-role">Content Creator, Faisalabad</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card testi-card">
-          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
-          <p class="testi-text">"Premium CV design is worth every rupee! Design was so clean and professional. Got hired within a month!"</p>
-          <div class="testi-author">
-            <div class="testi-av">Z</div>
-            <div>
-              <div class="testi-name">Zainab Hussain</div>
-              <div class="testi-role">Freelancer, Multan</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="slider-ctrl">
-      <button class="s-arrow" id="t-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
-      <button class="s-arrow" id="t-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     FAQ
-═══════════════════════════════════ -->
-<section class="section" id="faq">
-  <div class="container">
-    <div style="text-align:center" class="reveal">
-      <span class="eyebrow">FAQ</span>
-      <h2 class="h2">Frequently Asked <span class="grad">Questions</span></h2>
-    </div>
-
-    <div class="faq-list reveal">
-
-      <div class="faq-item">
-        <button class="faq-q">CV design mein kitna time lagta hai? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Basic CV 24 hours mein deliver hota hai. Premium CV sirf 12 hours mein. Urgent order ke liye WhatsApp pe message karen.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Kya AI tools use karne ke liye technical knowledge chahiye? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Bilkul nahi! Sare tutorials beginner-friendly hain. Agar aap phone use kar sakte hain toh ye tools zaroor seekh sakte hain.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Kya resources free hain? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Haan! Zyada tar AI tips, tutorials aur resources bilkul free hain. Sirf CV design aur LinkedIn optimization services paid hain.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Payment kaise hoti hai? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>JazzCash, EasyPaisa, ya bank transfer — jo aapke liye convenient ho. Payment details WhatsApp par share ki jaati hain order confirm hone ke baad.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">CV ATS-friendly hoga? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Haan, bilkul! Har CV ATS (Applicant Tracking System) ke saath compatible hota hai taake online job applications mein filter na ho jaaye.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Kya revisions milte hain? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Basic plan mein 1 revision, Premium mein 3 revisions included hain. Changes WhatsApp par share karen — jaldi update kar diya jaata hai.</p></div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Kya main contact kar sakti/sakta hoon social media pe? <span class="faq-ico">+</span></button>
-        <div class="faq-body"><p>Haan! Instagram @anamaistudio, Facebook aur LinkedIn par available hoon. Social media icons neeche footer mein diye gaye hain.</p></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     ABOUT FOUNDER
-═══════════════════════════════════ -->
-<section class="section" id="about">
-  <div class="container">
-    <div class="about-grid">
-
-      <!-- Founder Card -->
-      <div class="founder-card reveal">
-        <div class="founder-img">
-          👩
-          <span class="ph-label">Add your photo</span>
-          <!--
-            PLACEHOLDER — To add your photo:
-            1. Save your photo as: assets/founder.jpg
-            2. Replace the emoji above with an <img> tag:
-               <img src="assets/founder.jpg" alt="Anam" style="width:100%;height:100%;border-radius:50%;object-fit:cover"/>
-          -->
-        </div>
-        <div class="founder-name">Anam Majid</div>
-        <div class="founder-title">Data Science Student · AI Content Creator · Freelancer</div>
-        <div class="social-row">
-          <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-
-      <!-- Story -->
-      <div class="reveal d2">
-        <span class="eyebrow">About Me</span>
-        <h2 class="h2">The Person Behind <span class="grad">Anam AI Studio</span></h2>
-        <p style="font-size:16px;color:var(--txt-secondary);line-height:1.85;margin-bottom:18px">
-          Assalam o Alaikum! Main Anam hoon — Pakistan se ek Data Science student jo AI ki duniya mein roz nayi cheezein seekh rahi hai aur sab ke saath share karti hai.
-        </p>
-        <p style="font-size:16px;color:var(--txt-secondary);line-height:1.85;margin-bottom:30px">
-          Anam AI Studio isliye banaya taake Pakistani students, freelancers aur creators ko AI tools aur practical knowledge asaan tarike se mil sake — bilkul free. Sath hi professional CV design aur LinkedIn optimization services bhi provide karta hoon.
-        </p>
-        <div class="founder-chips">
-          <div class="chip"><div class="cn">1st</div><div class="cl">Semester DS</div></div>
-          <div class="chip"><div class="cn">3</div><div class="cl">Platforms</div></div>
-          <div class="chip"><div class="cn">200+</div><div class="cl">CVs Done</div></div>
-          <div class="chip"><div class="cn">🇵🇰</div><div class="cl">Pakistan</div></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     NEWSLETTER
-═══════════════════════════════════ -->
-<section class="section" id="newsletter">
-  <div class="container">
-    <div class="nl-box reveal">
-      <span class="eyebrow" style="justify-content:center">Newsletter</span>
-      <h2 class="nl-title">Get Weekly <span class="grad">AI Tips</span></h2>
-      <p class="nl-sub">New AI tools, tricks & career tips — straight to your inbox. No spam, ever!</p>
-      <form class="nl-form" id="nl-form">
-        <input type="email" placeholder="Enter your email address…" required/>
-        <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-paper-plane"></i></button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     CONTACT
-═══════════════════════════════════ -->
-<section class="section" id="contact">
-  <div class="container">
+ <div class="container">
+  <div class="why-grid">
+   <div>
     <div class="reveal">
-      <span class="eyebrow">Contact</span>
-      <h2 class="h2">Let's <span class="grad">Connect</span></h2>
-      <p class="subtext">Have a question, want to order a CV, or just want to say hi? I'm just a message away!</p>
+     <span class="eyebrow">Why Us</span>
+     <h2 class="h2">Why Choose <span class="g">Anam AI Studio?</span></h2>
+     <p class="sub">Real, practical knowledge — not just theory. Made by a student, for students.</p>
     </div>
-
-    <div class="contact-grid">
-
-      <!-- Info -->
-      <div class="c-items reveal d1">
-        <div class="c-item">
-          <div class="c-ico">📧</div>
-          <div>
-            <div class="c-lbl">Email</div>
-            <div class="c-val"><a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico">📱</div>
-          <div>
-            <div class="c-lbl">WhatsApp</div>
-            <!-- PLACEHOLDER: Replace with your number when ready -->
-            <div class="c-val" style="color:var(--txt-muted);font-style:italic">Coming Soon</div>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico">📍</div>
-          <div>
-            <div class="c-lbl">Location</div>
-            <div class="c-val">Pakistan 🇵🇰</div>
-          </div>
-        </div>
-
-        <div>
-          <div class="c-lbl" style="margin-bottom:12px">Follow on Social Media</div>
-          <div class="social-row" style="justify-content:flex-start">
-            <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div class="reveal d2">
-        <form class="c-form" id="contact-form">
-          <div class="f-row">
-            <div class="f-group">
-              <label class="f-label">Your Name</label>
-              <input type="text" class="f-input" placeholder="e.g. Sara Ahmed" required/>
-            </div>
-            <div class="f-group">
-              <label class="f-label">Email Address</label>
-              <input type="email" class="f-input" placeholder="you@email.com" required/>
-            </div>
-          </div>
-          <div class="f-group">
-            <label class="f-label">Subject</label>
-            <input type="text" class="f-input" placeholder="CV Order / AI Question / Feedback…" required/>
-          </div>
-          <div class="f-group">
-            <label class="f-label">Message</label>
-            <textarea class="f-input" placeholder="Tell me more…" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary submit-btn" style="justify-content:center">
-            Send Message <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-        <div id="form-success">✅ Message sent! I'll reply within 24 hours. JazakAllah! 🌟</div>
-      </div>
-
+    <div class="features">
+     <div class="feat reveal d1"><div class="feat-ico">🎯</div><div><div class="feat-title">100% Practical Content</div><p class="feat-desc">Every tip and tool is personally tested. No fluff — only what actually works.</p></div></div>
+     <div class="feat reveal d2"><div class="feat-ico">🆓</div><div><div class="feat-title">Free for Students</div><p class="feat-desc">Most resources are completely free because knowledge should be accessible to everyone.</p></div></div>
+     <div class="feat reveal d3"><div class="feat-ico">🇵🇰</div><div><div class="feat-title">Pakistan-Focused</div><p class="feat-desc">Designed for Pakistani students & freelancers — local context, global knowledge.</p></div></div>
+     <div class="feat reveal d1"><div class="feat-ico">⚡</div><div><div class="feat-title">Always Updated</div><p class="feat-desc">AI changes fast. Fresh tips, new tools & tricks updated every week.</p></div></div>
     </div>
+   </div>
+   <div class="why-visual reveal d2">
+    <div class="why-art">🤖</div>
+    <div class="stat-badge tr"><div class="badge-n"><span data-count="5000">0</span>+</div><div class="badge-l">Students</div></div>
+    <div class="stat-badge bl"><div class="badge-n"><span data-count="200">0</span>+</div><div class="badge-l">CVs Done</div></div>
+   </div>
   </div>
+ </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     FOOTER
-═══════════════════════════════════ -->
-<footer>
-  <div class="container">
-    <div class="ft-grid">
-
-      <!-- Brand -->
-      <div>
-        <div class="ft-brand-name">Anam AI Studio</div>
-        <p class="ft-desc">Pakistan's AI learning studio — free AI tools, tips, and professional career services all in one place.</p>
-        <div class="social-row">
-          <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/anam-majid-9b41b4360" target="_blank" rel="noopener" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:anamaitech5@gmail.com" class="soc-btn" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <div class="ft-col-title">Quick Links</div>
-        <ul class="ft-links">
-          <li><a href="#tools">AI Tools</a></li>
-          <li><a href="#resources">Free Resources</a></li>
-          <li><a href="#tips">AI Tips & Tricks</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <div class="ft-col-title">Services</div>
-        <ul class="ft-links">
-          <li><a href="#cv">CV Design</a></li>
-          <li><a href="#cv">LinkedIn Optimization</a></li>
-          <li><a href="#cv">Cover Letter</a></li>
-          <li><a href="#cv">Data Entry</a></li>
-          <li><a href="#cv">MS Office Work</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div>
-        <div class="ft-col-title">Contact</div>
-        <ul class="ft-links">
-          <li><a href="mailto:anamaitech5@gmail.com">📧 Email Us</a></li>
-          <li><a href="https://www.instagram.com/anamaistudio" target="_blank">📸 Instagram</a></li>
-          <li><a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank">👥 Facebook</a></li>
-          <li><a href="#faq">❓ FAQ</a></li>
-          <li><a href="#newsletter">📬 Newsletter</a></li>
-        </ul>
-      </div>
-
+<!-- CV SERVICES -->
+<section class="section" id="cv">
+ <div class="container">
+  <div class="cv-grid">
+   <div>
+    <div class="reveal">
+     <span class="eyebrow">Services</span>
+     <h2 class="h2">Professional <span class="g">CV Design</span></h2>
+     <p class="sub">ATS-friendly, recruiter-approved CVs that get you noticed.</p>
     </div>
-
-    <div class="ft-bottom">
-      <span>© 2025 Anam AI Studio — Made with ❤️ in Pakistan 🇵🇰</span>
-      <span>Contact: <a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></span>
+    <div class="plans">
+     <div class="plan reveal d1">
+      <div class="plan-hd"><div class="plan-name">Basic CV</div><div class="plan-price">PKR 500</div></div>
+      <div class="plan-feats">
+       <div class="plan-feat">Single-page professional CV</div>
+       <div class="plan-feat">ATS-friendly format</div>
+       <div class="plan-feat">1 revision · 24h delivery</div>
+      </div>
+     </div>
+     <div class="plan pop reveal d2">
+      <div class="pop-tag">⭐ POPULAR</div>
+      <div class="plan-hd"><div class="plan-name">Premium CV</div><div class="plan-price">PKR 1200</div></div>
+      <div class="plan-feats">
+       <div class="plan-feat">2-page premium CV design</div>
+       <div class="plan-feat">LinkedIn headline & summary</div>
+       <div class="plan-feat">Cover letter included</div>
+       <div class="plan-feat">3 revisions · 12h delivery</div>
+      </div>
+     </div>
+     <div class="plan reveal d3">
+      <div class="plan-hd"><div class="plan-name">LinkedIn Optimization</div><div class="plan-price">PKR 800</div></div>
+      <div class="plan-feats">
+       <div class="plan-feat">Full profile rewrite</div>
+       <div class="plan-feat">Keyword optimization</div>
+       <div class="plan-feat">2 revisions included</div>
+      </div>
+     </div>
     </div>
+    <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap" class="reveal">
+     <!-- Replace 923166687805 with your actual number -->
+     <a href="https://wa.me/923166687805?text=Hi%20Anam!%20I%20want%20to%20order%20a%20CV." target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i>Order on WhatsApp</a>
+     <a href="tel:+923166687805" class="btn btn-g"><i class="fas fa-phone"></i>Click to Call</a>
+    </div>
+   </div>
+   <div class="cv-preview reveal d2">
+    <div class="cv-ph">[ YOUR LOGO — add logo to assets/logo.png ]</div>
+    <div class="cv-hd">
+     <div class="cv-av">👩</div>
+     <div><div style="font-size:15px;font-weight:700">Your Name Here</div><div style="font-size:12px;color:var(--p1);margin-top:2px">Data Science Student · AI Content Creator</div></div>
+    </div>
+    <div style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--txt3);margin:12px 0 8px">Skills</div>
+    <div class="skill-row"><div class="skill-lbl">Python</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div></div>
+    <div class="skill-row"><div class="skill-lbl">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="96%"></div></div></div>
+    <div class="skill-row"><div class="skill-lbl">Canva</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div></div>
+    <div class="skill-row"><div class="skill-lbl">MS Office</div><div class="skill-track"><div class="skill-fill" data-w="88%"></div></div></div>
+    <div style="margin-top:16px;font-size:13px;color:var(--txt2)">📧 <a href="mailto:anamaitech5@gmail.com" style="color:var(--p1)">anamaitech5@gmail.com</a></div>
+   </div>
   </div>
+ </div>
+</section>
+
+<!-- BLOG -->
+<section class="section" id="blog">
+ <div class="container">
+  <div class="blog-hd reveal">
+   <div><span class="eyebrow">Blog</span><h2 class="h2">Latest <span class="g">AI Tips & Blog</span></h2></div>
+   <a href="#blog" class="btn btn-g">View All <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="blog-grid">
+   <article class="card blog-card reveal d1">
+    <div class="blog-img" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">
+     <span style="position:relative;z-index:1">🎙️</span><div class="blog-img-tint"></div>
+    </div>
+    <div class="blog-body">
+     <div class="blog-meta"><span class="pill">ElevenLabs</span><span class="blog-date">June 2025</span></div>
+     <h3 class="blog-title">ElevenLabs Voice Cloning: Complete Beginner's Guide</h3>
+     <p class="blog-excerpt">Clone your voice in 60 seconds using ElevenLabs free plan. Step-by-step tutorial for reels & podcasts.</p>
+     <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+    </div>
+   </article>
+   <article class="card blog-card reveal d2">
+    <div class="blog-img" style="background:linear-gradient(135deg,#4F46E5,#8B5CF6)">
+     <span style="position:relative;z-index:1">✍️</span><div class="blog-img-tint"></div>
+    </div>
+    <div class="blog-body">
+     <div class="blog-meta"><span class="pill">ChatGPT</span><span class="blog-date">May 2025</span></div>
+     <h3 class="blog-title">10 ChatGPT Prompts Every Student Must Know in 2025</h3>
+     <p class="blog-excerpt">Copy-paste prompts for assignments, quizzes, presentations & research. Save hours every single week!</p>
+     <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+    </div>
+   </article>
+   <article class="card blog-card reveal d3">
+    <div class="blog-img" style="background:linear-gradient(135deg,#EC4899,#8B5CF6)">
+     <span style="position:relative;z-index:1">💼</span><div class="blog-img-tint"></div>
+    </div>
+    <div class="blog-body">
+     <div class="blog-meta"><span class="pill">LinkedIn</span><span class="blog-date">April 2025</span></div>
+     <h3 class="blog-title">LinkedIn Profile Optimization: Get Noticed by Recruiters</h3>
+     <p class="blog-excerpt">Optimize your LinkedIn profile with AI and get more views, connections & job interview calls.</p>
+     <a href="#" class="blog-read">Read More <i class="fas fa-arrow-right"></i></a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+ <div class="container">
+  <div style="text-align:center" class="reveal">
+   <span class="eyebrow">Reviews</span>
+   <h2 class="h2">What People <span class="g">Say</span></h2>
+   <p class="sub" style="margin:0 auto">Real feedback from students, freelancers & clients across Pakistan.</p>
+  </div>
+  <div class="testi-wrap">
+   <div class="testi-track" id="tt">
+    <div class="card testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Anam AI Studio ne meri CV bilkul transform kar di! Recruiters notice karne lage. 100% recommended!"</p><div class="testi-author"><div class="tav">F</div><div><div class="t-name">Fatima Malik</div><div class="t-role">BS Student, Lahore</div></div></div></div>
+    <div class="card testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"ChatGPT prompts wali tips ne mere assignments ke hours bachaye. Bohot practical aur helpful content hai!"</p><div class="testi-author"><div class="tav">A</div><div><div class="t-name">Ahmed Raza</div><div class="t-role">FSc Student, Karachi</div></div></div></div>
+    <div class="card testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"LinkedIn optimize hone ke 2 weeks baad 3 job interview calls aayi! Amazing work by Anam!"</p><div class="testi-author"><div class="tav">S</div><div><div class="t-name">Sara Iqbal</div><div class="t-role">Fresh Graduate, Islamabad</div></div></div></div>
+    <div class="card testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"ElevenLabs tutorial se apne YouTube ke liye AI voice banayi. Subscribers aur views dono barh gaye!"</p><div class="testi-author"><div class="tav">U</div><div><div class="t-name">Usman Tariq</div><div class="t-role">Content Creator, Faisalabad</div></div></div></div>
+    <div class="card testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div><p class="testi-text">"Premium CV design worth every rupee! Clean, professional design. Got hired within a month!"</p><div class="testi-author"><div class="tav">Z</div><div><div class="t-name">Zainab Hussain</div><div class="t-role">Freelancer, Multan</div></div></div></div>
+   </div>
+  </div>
+  <div class="slider-ctrl">
+   <button class="sarr" id="t-prev"><i class="fas fa-arrow-left"></i></button>
+   <button class="sarr" id="t-next"><i class="fas fa-arrow-right"></i></button>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+ <div class="container">
+  <div style="text-align:center" class="reveal">
+   <span class="eyebrow">FAQ</span>
+   <h2 class="h2">Frequently Asked <span class="g">Questions</span></h2>
+  </div>
+  <div class="faq-list reveal">
+   <div class="faq-item"><button class="faq-q">CV design mein kitna time lagta hai? <span class="fq-ico">+</span></button><div class="faq-body"><p>Basic CV 24 hours mein, Premium CV sirf 12 hours mein deliver hota hai. Urgent orders ke liye WhatsApp karo.</p></div></div>
+   <div class="faq-item"><button class="faq-q">Kya AI tools use karne ke liye technical knowledge chahiye? <span class="fq-ico">+</span></button><div class="faq-body"><p>Bilkul nahi! Sare tutorials beginner-friendly hain. Phone use kar sakte ho? Toh ye tools zaroor seekh sakte ho.</p></div></div>
+   <div class="faq-item"><button class="faq-q">Kya resources free hain? <span class="fq-ico">+</span></button><div class="faq-body"><p>Haan! AI tips, tutorials aur most resources bilkul free hain. Sirf CV design aur LinkedIn services paid hain.</p></div></div>
+   <div class="faq-item"><button class="faq-q">Payment kaise hoti hai? <span class="fq-ico">+</span></button><div class="faq-body"><p>JazzCash, EasyPaisa ya bank transfer — jo convenient ho. Details WhatsApp par share ki jaati hain order ke baad.</p></div></div>
+   <div class="faq-item"><button class="faq-q">CV ATS-friendly hoga? <span class="fq-ico">+</span></button><div class="faq-body"><p>Haan bilkul! Har CV ATS (Applicant Tracking System) compatible hota hai taake online apply mein filter na ho.</p></div></div>
+   <div class="faq-item"><button class="faq-q">Kya revisions milte hain? <span class="fq-ico">+</span></button><div class="faq-body"><p>Basic mein 1 revision, Premium mein 3 revisions included hain. Changes WhatsApp par share karo — jaldi update ho jata hai.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+ <div class="container">
+  <div class="about-grid">
+   <div class="founder-card reveal">
+    <div class="founder-photo"><img src="assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/></div>
+    <div class="founder-name">Anam Majid</div>
+    <div class="founder-title">Data Science Student · AI Content Creator · Freelancer</div>
+    <div class="social-row">
+     <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="soc" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+     <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc" title="Instagram"><i class="fab fa-instagram"></i></a>
+     <a href="mailto:anamaitech5@gmail.com" class="soc" title="Email"><i class="fas fa-envelope"></i></a>
+     <!-- Replace with your YouTube channel -->
+     <a href="https://youtube.com" target="_blank" class="soc" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+   </div>
+   <div class="reveal d2">
+    <span class="eyebrow">About Me</span>
+    <h2 class="h2">The Person Behind <span class="g">Anam AI Studio</span></h2>
+    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:16px">Assalam o Alaikum! Main Anam hoon — Pakistan se ek Data Science student jo AI ki duniya mein roz nayi cheezein seekh rahi hai aur sab ke saath share karti hai.</p>
+    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:28px">Anam AI Studio isliye banaya taake Pakistani students, freelancers aur creators ko AI tools aur practical knowledge asaan tarike se mil sake — bilkul free mein.</p>
+    <div class="founder-chips">
+     <div class="chip"><div class="cn">1st</div><div class="cl">Semester DS</div></div>
+     <div class="chip"><div class="cn">3</div><div class="cl">Platforms</div></div>
+     <div class="chip"><div class="cn">200+</div><div class="cl">CVs Done</div></div>
+     <div class="chip"><div class="cn">🇵🇰</div><div class="cl">Pakistan</div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section" id="newsletter">
+ <div class="container">
+  <div class="nl-box reveal">
+   <span class="eyebrow" style="justify-content:center">Newsletter</span>
+   <h2 class="nl-title">Get Weekly <span class="g">AI Tips</span></h2>
+   <p class="nl-sub">New AI tools, tricks & career tips — straight to your inbox. No spam!</p>
+   <form class="nl-form" id="nl-form">
+    <input type="email" placeholder="Enter your email address…" required/>
+    <button type="submit" class="btn btn-p">Subscribe <i class="fas fa-paper-plane"></i></button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+ <div class="container">
+  <div class="reveal">
+   <span class="eyebrow">Contact</span>
+   <h2 class="h2">Let's <span class="g">Connect</span></h2>
+   <p class="sub">Have a question, want to order a CV, or just say hi? I'm one message away!</p>
+  </div>
+  <div class="contact-grid">
+   <div class="c-items reveal d1">
+    <div class="c-item"><div class="c-ico">📧</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></div></div></div>
+    <div class="c-item"><div class="c-ico">📱</div><div><div class="c-lbl">WhatsApp</div>
+     <!-- Replace 923166687805 with your number -->
+     <div class="c-val"><a href="https://wa.me/923166687805" target="_blank">Chat on WhatsApp</a></div></div></div>
+    <div class="c-item"><div class="c-ico">📞</div><div><div class="c-lbl">Call</div><div class="c-val"><a href="tel:+923166687805">Click to Call</a></div></div></div>
+    <div class="c-item"><div class="c-ico">📍</div><div><div class="c-lbl">Location</div><div class="c-val">Pakistan 🇵🇰</div></div></div>
+    <div>
+     <div class="c-lbl" style="margin-bottom:12px">Follow Me</div>
+     <div class="social-row" style="justify-content:flex-start">
+      <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" class="soc"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="soc"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/anamaistudio" target="_blank" class="soc"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:anamaitech5@gmail.com" class="soc"><i class="fas fa-envelope"></i></a>
+      <a href="https://youtube.com" target="_blank" class="soc"><i class="fab fa-youtube"></i></a>
+     </div>
+    </div>
+   </div>
+   <!-- Web3Forms contact — replace access_key below -->
+   <div class="reveal d2">
+    <form class="c-form" id="contact-form">
+     <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY"/>
+     <input type="hidden" name="subject" value="New message from Anam AI Studio website"/>
+     <div class="f-row">
+      <div class="f-grp"><label class="f-lbl">Your Name</label><input type="text" name="name" class="f-inp" placeholder="Sara Ahmed" required/></div>
+      <div class="f-grp"><label class="f-lbl">Email</label><input type="email" name="email" class="f-inp" placeholder="you@email.com" required/></div>
+     </div>
+     <div class="f-grp"><label class="f-lbl">Subject</label><input type="text" name="subject2" class="f-inp" placeholder="CV Order / AI Question…" required/></div>
+     <div class="f-grp"><label class="f-lbl">Message</label><textarea name="message" class="f-inp" placeholder="Tell me more…" required></textarea></div>
+     <button type="submit" class="btn btn-p submit-btn" style="justify-content:center">Send Message <i class="fas fa-paper-plane"></i></button>
+    </form>
+    <div id="form-ok">✅ Message sent! I'll reply within 24 hours. JazakAllah! 🌟</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+ <div class="container">
+  <div class="ft-grid">
+   <div>
+    <div class="ft-logo"><img src="assets/logo.png" alt="Logo"/><div class="ft-brand">Anam AI Studio</div></div>
+    <p class="ft-desc">Pakistan's AI learning studio — free tools, tips, CV design & career services. Learn AI · Build Career · Grow Business.</p>
+    <div class="social-row">
+     <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" class="soc"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="soc"><i class="fab fa-linkedin-in"></i></a>
+     <a href="https://www.instagram.com/anamaistudio" target="_blank" class="soc"><i class="fab fa-instagram"></i></a>
+     <a href="mailto:anamaitech5@gmail.com" class="soc"><i class="fas fa-envelope"></i></a>
+     <a href="https://youtube.com" target="_blank" class="soc"><i class="fab fa-youtube"></i></a>
+    </div>
+   </div>
+   <div>
+    <div class="ft-col-title">Quick Links</div>
+    <ul class="ft-links">
+     <li><a href="#tools">AI Tools Directory</a></li>
+     <li><a href="#resources">Free Resources</a></li>
+     <li><a href="#courses">AI Courses</a></li>
+     <li><a href="#templates">Canva Templates</a></li>
+     <li><a href="#blog">Blog</a></li>
+    </ul>
+   </div>
+   <div>
+    <div class="ft-col-title">Services</div>
+    <ul class="ft-links">
+     <li><a href="#cv">CV Design</a></li>
+     <li><a href="#cv">LinkedIn Optimization</a></li>
+     <li><a href="#cv">Cover Letter</a></li>
+     <li><a href="#cv">Data Entry</a></li>
+     <li><a href="#cv">MS Office Work</a></li>
+    </ul>
+   </div>
+   <div>
+    <div class="ft-col-title">Contact</div>
+    <ul class="ft-links">
+     <li><a href="mailto:anamaitech5@gmail.com">📧 anamaitech5@gmail.com</a></li>
+     <li><a href="https://wa.me/923166687805" target="_blank">💬 WhatsApp Us</a></li>
+     <li><a href="https://www.instagram.com/anamaistudio" target="_blank">📸 @anamaistudio</a></li>
+     <li><a href="#faq">❓ FAQ</a></li>
+     <li><a href="#newsletter">📬 Newsletter</a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="ft-bottom">
+   <span>© 2026 Anam AI Studio · Made with ❤️ in Pakistan 🇵🇰</span>
+   <span><a href="mailto:anamaitech5@gmail.com">anamaitech5@gmail.com</a></span>
+  </div>
+ </div>
 </footer>
 
-<!-- ═══════════════════════════════════
-     FLOATING BUTTONS
-═══════════════════════════════════ -->
+<!-- FLOATING BUTTONS -->
 <div class="floats">
-  <!-- PLACEHOLDER WhatsApp button — replace XXXXXXXXXXX with your number -->
-  <a href="https://wa.me/92XXXXXXXXXXX?text=Hi%20Anam!%20I%20found%20your%20website."
-     target="_blank" class="f-btn wa-btn" title="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <button class="f-btn top-btn" id="top-btn" title="Back to Top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+ <!-- Replace 923166687805 with your WhatsApp number -->
+ <a href="https://wa.me/923166687805?text=Hi%20Anam!%20I%20found%20your%20website." target="_blank" class="f-btn wa-f" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+ <button class="f-btn top-f" id="top-f" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 </div>
 
 <script src="script.js"></script>
