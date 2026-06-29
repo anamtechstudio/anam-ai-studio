@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="Anam AI Studio"/>
 <meta name="twitter:description" content="Learn AI · Build Career · Grow Business"/>
 <title>Anam AI Studio — Learn AI · Build Career · Grow Business</title>
-<link rel="icon" href="assets/logo.png" type="image/png"/>
+<link rel="icon" href="./assets/logo.png" type="image/png"/>
 <link rel="stylesheet" href="style.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
@@ -22,7 +22,7 @@
 
 <!-- LOADER -->
 <div id="loader">
-  <div class="l-logo"><img src="assets/logo.png" alt="Anam AI Studio Logo"/></div>
+  <div class="l-logo"><img src="./assets/logo.png" alt="Anam AI Studio Logo"/></div>
   <div class="l-bar"><div class="l-bar-fill"></div></div>
   <div class="l-text">LOADING…</div>
 </div>
@@ -31,7 +31,7 @@
 <nav id="nav">
  <div class="container nav-wrap">
   <a href="#hero" class="nav-logo">
-   <img src="assets/logo.png" alt="Logo"/>
+   <img src="./assets/logo.png" alt="Logo"/>
    <div class="nav-logo-txt">Anam AI Studio<span>LEARN AI · GROW CAREER · BUILD FUTURE</span></div>
   </a>
   <ul class="nav-links">
@@ -94,7 +94,7 @@
    </div>
   </div>
   <div class="hero-photo-wrap reveal d2">
-   <div class="hero-photo-ring"><img src="assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/></div>
+   <div class="hero-photo-ring"><img src="./assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/></div>
    <div class="hero-fc hfc1"><div class="fc-ico">🤖</div>AI Tips Daily</div>
    <div class="hero-fc hfc2"><div class="fc-ico">✨</div>CV in 24h</div>
    <div class="hero-fc hfc3"><div class="fc-ico">🎓</div>Free Resources</div>
@@ -651,17 +651,24 @@
     </div>
    </div>
    <div class="cv-preview reveal d2">
-    <div class="cv-ph">[ YOUR LOGO — add logo to assets/logo.png ]</div>
+    <!-- Founder photo in CV card -->
     <div class="cv-hd">
-     <div class="cv-av">👩</div>
-     <div><div style="font-size:15px;font-weight:700">Your Name Here</div><div style="font-size:12px;color:var(--p1);margin-top:2px">Data Science Student · AI Content Creator</div></div>
+     <div class="cv-av-photo"><img src="./assets/founder.png" alt="Anam Majid"/></div>
+     <div>
+      <div style="font-size:16px;font-weight:800;color:var(--txt)">Anam Majid</div>
+      <div style="font-size:11px;color:var(--p1);margin-top:3px;line-height:1.5">AI Educator • CV Designer<br>LinkedIn Optimization Expert</div>
+     </div>
     </div>
-    <div style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--txt3);margin:12px 0 8px">Skills</div>
-    <div class="skill-row"><div class="skill-lbl">Python</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div></div>
-    <div class="skill-row"><div class="skill-lbl">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="96%"></div></div></div>
-    <div class="skill-row"><div class="skill-lbl">Canva</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div></div>
-    <div class="skill-row"><div class="skill-lbl">MS Office</div><div class="skill-track"><div class="skill-fill" data-w="88%"></div></div></div>
-    <div style="margin-top:16px;font-size:13px;color:var(--txt2)">📧 <a href="mailto:anamaitech5@gmail.com" style="color:var(--p1)">anamaitech5@gmail.com</a></div>
+    <div class="cv-skills-title">Core Skills</div>
+    <div class="skill-row"><div class="skill-lbl">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="98%"></div></div><div class="skill-pct">98%</div></div>
+    <div class="skill-row"><div class="skill-lbl">ChatGPT</div><div class="skill-track"><div class="skill-fill" data-w="98%"></div></div><div class="skill-pct">98%</div></div>
+    <div class="skill-row"><div class="skill-lbl">Claude AI</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+    <div class="skill-row"><div class="skill-lbl">Canva</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+    <div class="skill-row"><div class="skill-lbl">CV Design</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+    <div class="skill-row"><div class="skill-lbl">LinkedIn</div><div class="skill-track"><div class="skill-fill" data-w="93%"></div></div><div class="skill-pct">93%</div></div>
+    <div class="skill-row"><div class="skill-lbl">Freelancing</div><div class="skill-track"><div class="skill-fill" data-w="92%"></div></div><div class="skill-pct">92%</div></div>
+    <div class="skill-row"><div class="skill-lbl">MS Word</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+    <div style="margin-top:16px;font-size:12px;color:var(--txt2)">📧 <a href="mailto:anamaitech5@gmail.com" style="color:var(--p1)">anamaitech5@gmail.com</a></div>
    </div>
   </div>
  </div>
@@ -757,32 +764,84 @@
 <!-- ABOUT -->
 <section class="section" id="about">
  <div class="container">
-  <div class="about-grid">
+
+  <!-- Mission Banner -->
+  <div class="mission-banner reveal">
+   <div class="mission-icon">🚀</div>
+   <div>
+    <div class="mission-title">Our Mission</div>
+    <div class="mission-text">To empower every Pakistani student, freelancer and creator with free AI education, practical tools and professional career services — so they can <strong>Learn AI, Build Career and Grow Business</strong> without limits.</div>
+   </div>
+  </div>
+
+  <div class="about-grid" style="margin-top:64px">
+
+   <!-- Founder Card — Premium -->
    <div class="founder-card reveal">
-    <div class="founder-photo"><img src="assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/></div>
+    <div class="founder-glow-ring">
+     <div class="founder-photo">
+      <img src="./assets/founder.png" alt="Anam Majid — Founder Anam AI Studio"/>
+     </div>
+    </div>
     <div class="founder-name">Anam Majid</div>
-    <div class="founder-title">Data Science Student · AI Content Creator · Freelancer</div>
+    <div class="founder-title">AI Educator &nbsp;•&nbsp; AI Tools Expert &nbsp;•&nbsp; CV Designer<br>LinkedIn Optimization Expert &nbsp;•&nbsp; Content Creator</div>
+    <div class="founder-location"><i class="fas fa-map-marker-alt"></i> Pakistan 🇵🇰</div>
+    <div class="founder-divider"></div>
     <div class="social-row">
      <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" rel="noopener" class="soc" title="Facebook"><i class="fab fa-facebook-f"></i></a>
      <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="soc" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
      <a href="https://www.instagram.com/anamaistudio" target="_blank" rel="noopener" class="soc" title="Instagram"><i class="fab fa-instagram"></i></a>
      <a href="mailto:anamaitech5@gmail.com" class="soc" title="Email"><i class="fas fa-envelope"></i></a>
-     <!-- Replace with your YouTube channel -->
-     <a href="https://youtube.com" target="_blank" class="soc" title="YouTube"><i class="fab fa-youtube"></i></a>
+     <a href="https://wa.me/923166687805" target="_blank" class="soc" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
+    <a href="https://wa.me/923166687805?text=Hi%20Anam!%20I%20want%20to%20connect." target="_blank" class="btn btn-p" style="margin-top:20px;width:100%;justify-content:center;font-size:13px"><i class="fab fa-whatsapp"></i>Connect on WhatsApp</a>
    </div>
+
+   <!-- About Content + Skills -->
    <div class="reveal d2">
-    <span class="eyebrow">About Me</span>
-    <h2 class="h2">The Person Behind <span class="g">Anam AI Studio</span></h2>
-    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:16px">Assalam o Alaikum! Main Anam hoon — Pakistan se ek Data Science student jo AI ki duniya mein roz nayi cheezein seekh rahi hai aur sab ke saath share karti hai.</p>
-    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:28px">Anam AI Studio isliye banaya taake Pakistani students, freelancers aur creators ko AI tools aur practical knowledge asaan tarike se mil sake — bilkul free mein.</p>
-    <div class="founder-chips">
-     <div class="chip"><div class="cn">1st</div><div class="cl">Semester DS</div></div>
-     <div class="chip"><div class="cn">3</div><div class="cl">Platforms</div></div>
+    <span class="eyebrow">About Founder</span>
+    <h2 class="h2">Meet <span class="g">Anam Majid</span></h2>
+    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:14px">
+     Assalam o Alaikum! I'm <strong style="color:var(--txt)">Anam Majid</strong> — an AI Educator, CV Designer and Content Creator from Pakistan. I help students, freelancers and professionals use AI tools to build better careers and grow their businesses.
+    </p>
+    <p style="font-size:16px;color:var(--txt2);line-height:1.85;margin-bottom:28px">
+     I founded <strong style="color:var(--txt)">Anam AI Studio</strong> to make AI education free and accessible for every Pakistani. From ChatGPT to LinkedIn optimization — I teach it all in simple, practical steps that anyone can follow from their phone.
+    </p>
+
+    <!-- Full Skills Section -->
+    <div class="skills-section">
+     <div class="skills-title">Expert Skills</div>
+     <div class="skills-grid">
+      <div>
+       <div class="skill-row2"><div class="skill-lbl2">AI Tools</div><div class="skill-track"><div class="skill-fill" data-w="98%"></div></div><div class="skill-pct">98%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">ChatGPT</div><div class="skill-track"><div class="skill-fill" data-w="98%"></div></div><div class="skill-pct">98%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Claude AI</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Gemini</div><div class="skill-track"><div class="skill-fill" data-w="92%"></div></div><div class="skill-pct">92%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Canva</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">CV Design</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">LinkedIn Opt.</div><div class="skill-track"><div class="skill-fill" data-w="93%"></div></div><div class="skill-pct">93%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Freelancing</div><div class="skill-track"><div class="skill-fill" data-w="92%"></div></div><div class="skill-pct">92%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Prompt Eng.</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div><div class="skill-pct">90%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">MS Word</div><div class="skill-track"><div class="skill-fill" data-w="95%"></div></div><div class="skill-pct">95%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">MS Excel</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div><div class="skill-pct">90%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">MS PowerPoint</div><div class="skill-track"><div class="skill-fill" data-w="90%"></div></div><div class="skill-pct">90%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">HTML & CSS</div><div class="skill-track"><div class="skill-fill" data-w="88%"></div></div><div class="skill-pct">88%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">JavaScript</div><div class="skill-track"><div class="skill-fill" data-w="82%"></div></div><div class="skill-pct">82%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Python</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div><div class="skill-pct">85%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">Digital Mktg.</div><div class="skill-track"><div class="skill-fill" data-w="85%"></div></div><div class="skill-pct">85%</div></div>
+       <div class="skill-row2"><div class="skill-lbl2">SEO</div><div class="skill-track"><div class="skill-fill" data-w="84%"></div></div><div class="skill-pct">84%</div></div>
+      </div>
+     </div>
+    </div>
+
+    <div class="founder-chips" style="margin-top:28px">
+     <div class="chip"><div class="cn">5K+</div><div class="cl">Students</div></div>
      <div class="chip"><div class="cn">200+</div><div class="cl">CVs Done</div></div>
+     <div class="chip"><div class="cn">100+</div><div class="cl">Resources</div></div>
      <div class="chip"><div class="cn">🇵🇰</div><div class="cl">Pakistan</div></div>
     </div>
    </div>
+
   </div>
  </div>
 </section>
@@ -825,14 +884,14 @@
       <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="soc"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://www.instagram.com/anamaistudio" target="_blank" class="soc"><i class="fab fa-instagram"></i></a>
       <a href="mailto:anamaitech5@gmail.com" class="soc"><i class="fas fa-envelope"></i></a>
-      <a href="https://youtube.com" target="_blank" class="soc"><i class="fab fa-youtube"></i></a>
+      <a href="https://youtube.com/@anamaistudio" target="_blank" rel="noopener" class="soc" title="YouTube"><i class="fab fa-youtube"></i></a>
      </div>
     </div>
    </div>
    <!-- Web3Forms contact — replace access_key below -->
    <div class="reveal d2">
     <form class="c-form" id="contact-form">
-     <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY"/>
+     <input type="hidden" name="access_key" value="YOUR-WEB3FORMS-KEY" /><!-- Get free key: web3forms.com --><input type="hidden" name="from_name" value="Anam AI Studio Website"/>
      <input type="hidden" name="subject" value="New message from Anam AI Studio website"/>
      <div class="f-row">
       <div class="f-grp"><label class="f-lbl">Your Name</label><input type="text" name="name" class="f-inp" placeholder="Sara Ahmed" required/></div>
@@ -853,14 +912,14 @@
  <div class="container">
   <div class="ft-grid">
    <div>
-    <div class="ft-logo"><img src="assets/logo.png" alt="Logo"/><div class="ft-brand">Anam AI Studio</div></div>
+    <div class="ft-logo"><img src="./assets/logo.png" alt="Logo"/><div class="ft-brand">Anam AI Studio</div></div>
     <p class="ft-desc">Pakistan's AI learning studio — free tools, tips, CV design & career services. Learn AI · Build Career · Grow Business.</p>
     <div class="social-row">
      <a href="https://www.facebook.com/share/1K9AoiFiLs/" target="_blank" class="soc"><i class="fab fa-facebook-f"></i></a>
      <a href="https://www.linkedin.com/in/anam-majid-9b41b4360?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="soc"><i class="fab fa-linkedin-in"></i></a>
      <a href="https://www.instagram.com/anamaistudio" target="_blank" class="soc"><i class="fab fa-instagram"></i></a>
      <a href="mailto:anamaitech5@gmail.com" class="soc"><i class="fas fa-envelope"></i></a>
-     <a href="https://youtube.com" target="_blank" class="soc"><i class="fab fa-youtube"></i></a>
+     <a href="https://youtube.com/@anamaistudio" target="_blank" rel="noopener" class="soc" title="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
    </div>
    <div>

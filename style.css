@@ -439,3 +439,78 @@ footer{background:rgba(0,0,0,.45);border-top:1px solid var(--border);padding:70p
   .hero-stats{gap:20px}
   .btn{justify-content:center}
 }
+
+/* ══════════════════════════════
+   PREMIUM FOUNDER CARD — v3
+   ══════════════════════════════ */
+.founder-glow-ring {
+  width:156px;height:156px;border-radius:50%;
+  background:var(--grad);padding:3px;margin:0 auto 20px;
+  box-shadow:0 0 0 6px rgba(139,92,246,.18),0 0 40px rgba(139,92,246,.35),0 0 80px rgba(236,72,153,.15);
+  animation:founderGlow 3s ease-in-out infinite;
+}
+@keyframes founderGlow{
+  0%,100%{box-shadow:0 0 0 6px rgba(139,92,246,.18),0 0 40px rgba(139,92,246,.35),0 0 80px rgba(236,72,153,.15)}
+  50%{box-shadow:0 0 0 8px rgba(139,92,246,.28),0 0 60px rgba(139,92,246,.5),0 0 100px rgba(236,72,153,.25)}
+}
+.founder-photo{width:100%;height:100%;border-radius:50%;overflow:hidden}
+.founder-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%}
+.founder-name{font-size:22px;font-weight:800;margin-bottom:6px;color:var(--txt)}
+.founder-title{font-size:12px;color:var(--p1);margin-bottom:10px;line-height:1.7;text-align:center}
+.founder-location{font-size:12px;color:var(--txt3);margin-bottom:16px;display:flex;align-items:center;gap:6px;justify-content:center}
+.founder-divider{width:60px;height:2px;background:var(--grad);border-radius:2px;margin:0 auto 18px}
+.founder-card{
+  background:var(--glass);
+  border:1px solid rgba(139,92,246,.25);
+  border-radius:24px;padding:36px 28px;text-align:center;
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  position:relative;overflow:hidden;
+  transition:transform var(--t) var(--ease),box-shadow var(--t) var(--ease),border-color var(--t) var(--ease);
+}
+.founder-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(139,92,246,.06) 0%,rgba(236,72,153,.04) 100%);
+  pointer-events:none;
+}
+.founder-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(139,92,246,.5);
+  box-shadow:0 20px 60px rgba(139,92,246,.25),0 0 0 1px rgba(139,92,246,.2);
+}
+
+/* Mission Banner */
+.mission-banner{
+  display:flex;align-items:flex-start;gap:20px;
+  background:var(--glass);border:1px solid rgba(139,92,246,.25);
+  border-radius:var(--r);padding:28px 32px;backdrop-filter:blur(20px);
+  position:relative;overflow:hidden;
+}
+.mission-banner::before{
+  content:'';position:absolute;top:-50%;left:-10%;
+  width:300px;height:300px;border-radius:50%;
+  background:var(--p2);opacity:.06;filter:blur(60px);pointer-events:none;
+}
+.mission-icon{font-size:36px;flex-shrink:0;margin-top:2px}
+.mission-title{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  color:var(--p1);margin-bottom:8px}
+.mission-text{font-size:15px;color:var(--txt2);line-height:1.8}
+.mission-text strong{color:var(--txt)}
+
+/* Skills in About */
+.skills-section{margin-top:24px}
+.skills-title{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--txt3);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.skills-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.skill-row2{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.skill-lbl2{font-size:12px;color:var(--txt2);width:100px;flex-shrink:0;font-weight:500}
+.skill-pct{font-size:11px;font-weight:700;color:var(--p1);width:32px;text-align:right;flex-shrink:0}
+
+/* CV Preview - av photo */
+.cv-av-photo{width:42px;height:42px;border-radius:50%;overflow:hidden;flex-shrink:0;
+  border:2px solid var(--p1)}
+.cv-av-photo img{width:100%;height:100%;object-fit:cover;object-position:top}
+.cv-skills-title{font-size:10px;text-transform:uppercase;letter-spacing:2px;
+  color:var(--txt3);margin:14px 0 10px}
+.skill-pct{font-size:10px;font-weight:700;color:var(--p1);width:28px;text-align:right;flex-shrink:0}
+.skill-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.skill-lbl{font-size:11px;color:var(--txt2);width:70px;flex-shrink:0}

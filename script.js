@@ -66,13 +66,13 @@ const co=new IntersectionObserver(ee=>{
 },{threshold:.5});
 document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
 
-/* Skill bars */
+/* Skill bars — both CV preview and About section */
 const so=new IntersectionObserver(ee=>{
   ee.forEach(e=>{if(!e.isIntersecting)return;
     e.target.querySelectorAll('.skill-fill').forEach(b=>{b.style.width=b.dataset.w||'0%'});
     so.unobserve(e.target);});
-},{threshold:.4});
-document.querySelectorAll('.cv-preview').forEach(el=>so.observe(el));
+},{threshold:.3});
+document.querySelectorAll('.cv-preview,.skills-section').forEach(el=>so.observe(el));
 
 /* Testimonials slider */
 let ti=0;
